@@ -1,0 +1,266 @@
+location_id,name,borough,group,overlap,km_to_crz,cluster
+1,Newark Airport,EWR,airport_or_unknown,0.0,11.262,airport_or_unknown:EWR:1
+2,Jamaica Bay,Queens,far,0.0,12.981,far:Queens:2
+3,Allerton/Pelham Gardens,Bronx,far,0.0,13.958,far:Bronx:7
+4,Alphabet City,Manhattan,core,0.9219,0.0,core:Manhattan:4
+5,Arden Heights,Staten Island,far,0.0,20.421,far:Staten Island:3
+6,Arrochar/Fort Wadsworth,Staten Island,far,0.0,10.954,far:Staten Island:1
+7,Astoria,Queens,near,0.0,1.844,near:Queens:1
+8,Astoria Park,Queens,near,0.0,3.231,near:Queens:1
+9,Auburndale,Queens,far,0.0,13.664,far:Queens:8
+10,Baisley Park,Queens,far,0.0,14.711,far:Queens:5
+11,Bath Beach,Brooklyn,far,0.0,9.539,far:Brooklyn:4
+12,Battery Park,Manhattan,mixed,0.0922,0.0,mixed:Manhattan:1
+13,Battery Park City,Manhattan,core,0.8356,0.0,core:Manhattan:3
+14,Bay Ridge,Brooklyn,far,0.0,6.509,far:Brooklyn:3
+15,Bay Terrace/Fort Totten,Queens,far,0.0,13.198,far:Queens:8
+16,Bayside,Queens,far,0.0,13.844,far:Queens:8
+17,Bedford,Brooklyn,near,0.0,1.935,near:Brooklyn:3
+18,Bedford Park,Bronx,far,0.0,12.165,far:Bronx:5
+19,Bellerose,Queens,far,0.0,18.138,far:Queens:7
+20,Belmont,Bronx,far,0.0,11.765,far:Bronx:5
+21,Bensonhurst East,Brooklyn,far,0.0,9.683,far:Brooklyn:4
+22,Bensonhurst West,Brooklyn,far,0.0,8.171,far:Brooklyn:4
+23,Bloomfield/Emerson Hill,Staten Island,far,0.0,13.399,far:Staten Island:1
+24,Bloomingdale,Manhattan,near,0.0,3.712,near:Manhattan:2
+25,Boerum Hill,Brooklyn,near,0.0,1.626,near:Brooklyn:2
+26,Borough Park,Brooklyn,far,0.0,6.383,far:Brooklyn:3
+27,Breezy Point/Fort Tilden/Riis Beach,Queens,far,0.0,16.884,far:Queens:3
+28,Briarwood/Jamaica Hills,Queens,far,0.0,12.189,far:Queens:5
+29,Brighton Beach,Brooklyn,far,0.0,12.633,far:Brooklyn:2
+30,Broad Channel,Queens,far,0.0,16.909,far:Queens:2
+31,Bronx Park,Bronx,far,0.0,11.489,far:Bronx:5
+32,Bronxdale,Bronx,far,0.0,13.168,far:Bronx:7
+33,Brooklyn Heights,Brooklyn,near,0.0,0.251,near:Brooklyn:2
+34,Brooklyn Navy Yard,Brooklyn,near,0.0,0.388,near:Brooklyn:4
+35,Brownsville,Brooklyn,far,0.0,6.605,far:Brooklyn:5
+36,Bushwick North,Brooklyn,near,0.0,3.541,near:Brooklyn:3
+37,Bushwick South,Brooklyn,near,0.0,2.639,near:Brooklyn:3
+38,Cambria Heights,Queens,far,0.0,19.004,far:Queens:6
+39,Canarsie,Brooklyn,far,0.0,8.716,far:Brooklyn:5
+40,Carroll Gardens,Brooklyn,near,0.0,1.771,near:Brooklyn:1
+41,Central Harlem,Manhattan,far,0.0,4.031,far:Manhattan:1
+42,Central Harlem North,Manhattan,far,0.0,5.337,far:Manhattan:1
+43,Central Park,Manhattan,mixed,0.0092,0.0,mixed:Manhattan:2
+44,Charleston/Tottenville,Staten Island,far,0.0,22.586,far:Staten Island:3
+45,Chinatown,Manhattan,core,0.9009,0.0,core:Manhattan:5
+46,City Island,Bronx,far,0.0,16.555,far:Bronx:6
+47,Claremont/Bathgate,Bronx,far,0.0,8.915,far:Bronx:1
+48,Clinton East,Manhattan,core,1.0,0.0,core:Manhattan:2
+49,Clinton Hill,Brooklyn,near,0.0,1.747,near:Brooklyn:2
+50,Clinton West,Manhattan,core,0.8615,0.0,core:Manhattan:2
+51,Co-Op City,Bronx,far,0.0,15.7,far:Bronx:7
+52,Cobble Hill,Brooklyn,near,0.0,1.323,near:Brooklyn:2
+53,College Point,Queens,far,0.0,8.111,far:Queens:8
+54,Columbia Street,Brooklyn,near,0.0,0.799,near:Brooklyn:2
+55,Coney Island,Brooklyn,far,0.0,12.923,far:Brooklyn:4
+56,Corona,Queens,far,0.0,7.82,far:Queens:10
+57,Corona,Queens,far,0.0,8.697,far:Queens:10
+58,Country Club,Bronx,far,0.0,13.941,far:Bronx:6
+59,Crotona Park,Bronx,far,0.0,9.756,far:Bronx:1
+60,Crotona Park East,Bronx,far,0.0,9.246,far:Bronx:1
+61,Crown Heights North,Brooklyn,near,0.0,3.603,near:Brooklyn:3
+62,Crown Heights South,Brooklyn,far,0.0,4.466,far:Brooklyn:6
+63,Cypress Hills,Brooklyn,far,0.0,7.071,far:Brooklyn:5
+64,Douglaston,Queens,far,0.0,16.845,far:Queens:7
+65,Downtown Brooklyn/MetroTech,Brooklyn,near,0.0,0.778,near:Brooklyn:2
+66,DUMBO/Vinegar Hill,Brooklyn,near,0.0,0.299,near:Brooklyn:2
+67,Dyker Heights,Brooklyn,far,0.0,7.409,far:Brooklyn:3
+68,East Chelsea,Manhattan,core,1.0,0.0,core:Manhattan:1
+69,East Concourse/Concourse Village,Bronx,far,0.0,7.043,far:Bronx:1
+70,East Elmhurst,Queens,far,0.0,6.978,far:Queens:10
+71,East Flatbush/Farragut,Brooklyn,far,0.0,6.613,far:Brooklyn:6
+72,East Flatbush/Remsen Village,Brooklyn,far,0.0,6.541,far:Brooklyn:6
+73,East Flushing,Queens,far,0.0,11.65,far:Queens:8
+74,East Harlem North,Manhattan,near,0.0,3.956,near:Manhattan:2
+75,East Harlem South,Manhattan,near,0.0,2.901,near:Manhattan:2
+76,East New York,Brooklyn,far,0.0,7.494,far:Brooklyn:5
+77,East New York/Pennsylvania Avenue,Brooklyn,far,0.0,7.331,far:Brooklyn:5
+78,East Tremont,Bronx,far,0.0,10.656,far:Bronx:1
+79,East Village,Manhattan,core,1.0,0.0,core:Manhattan:4
+80,East Williamsburg,Brooklyn,near,0.0,1.758,near:Brooklyn:4
+81,Eastchester,Bronx,far,0.0,15.464,far:Bronx:7
+82,Elmhurst,Queens,far,0.0,5.809,far:Queens:10
+83,Elmhurst/Maspeth,Queens,far,0.0,4.871,far:Queens:10
+84,Eltingville/Annadale/Prince's Bay,Staten Island,far,0.0,20.35,far:Staten Island:3
+85,Erasmus,Brooklyn,far,0.0,6.533,far:Brooklyn:6
+86,Far Rockaway,Queens,far,0.0,20.296,far:Queens:1
+87,Financial District North,Manhattan,core,0.9254,0.0,core:Manhattan:3
+88,Financial District South,Manhattan,core,0.7878,0.0,core:Manhattan:3
+89,Flatbush/Ditmas Park,Brooklyn,far,0.0,6.241,far:Brooklyn:6
+90,Flatiron,Manhattan,core,1.0,0.0,core:Manhattan:1
+91,Flatlands,Brooklyn,far,0.0,8.76,far:Brooklyn:1
+92,Flushing,Queens,far,0.0,10.084,far:Queens:8
+93,Flushing Meadows-Corona Park,Queens,far,0.0,8.248,far:Queens:10
+94,Fordham South,Bronx,far,0.0,11.535,far:Bronx:1
+95,Forest Hills,Queens,far,0.0,8.828,far:Queens:10
+96,Forest Park/Highland Park,Queens,far,0.0,6.682,far:Queens:9
+97,Fort Greene,Brooklyn,near,0.0,1.263,near:Brooklyn:2
+98,Fresh Meadows,Queens,far,0.0,13.89,far:Queens:7
+99,Freshkills Park,Staten Island,far,0.0,16.883,far:Staten Island:3
+100,Garment District,Manhattan,core,1.0,0.0,core:Manhattan:1
+101,Glen Oaks,Queens,far,0.0,19.435,far:Queens:7
+102,Glendale,Queens,far,0.0,6.721,far:Queens:9
+103,Governor's Island/Ellis Island/Liberty Island,Manhattan,near,0.0,2.525,near:Manhattan:1
+104,Governor's Island/Ellis Island/Liberty Island,Manhattan,near,0.0,1.655,near:Manhattan:1
+105,Governor's Island/Ellis Island/Liberty Island,Manhattan,near,0.0,0.833,near:Manhattan:1
+106,Gowanus,Brooklyn,near,0.0,2.753,near:Brooklyn:1
+107,Gramercy,Manhattan,core,1.0,0.0,core:Manhattan:4
+108,Gravesend,Brooklyn,far,0.0,11.761,far:Brooklyn:4
+109,Great Kills,Staten Island,far,0.0,18.167,far:Staten Island:2
+110,Great Kills Park,Staten Island,far,0.0,18.669,far:Staten Island:2
+111,Green-Wood Cemetery,Brooklyn,far,0.0,4.612,far:Brooklyn:6
+112,Greenpoint,Brooklyn,near,0.0,0.727,near:Brooklyn:4
+113,Greenwich Village North,Manhattan,core,1.0,0.0,core:Manhattan:6
+114,Greenwich Village South,Manhattan,core,1.0,0.0,core:Manhattan:6
+115,Grymes Hill/Clifton,Staten Island,far,0.0,9.581,far:Staten Island:1
+116,Hamilton Heights,Manhattan,far,0.0,6.23,far:Manhattan:1
+117,Hammels/Arverne,Queens,far,0.0,19.075,far:Queens:1
+118,Heartland Village/Todt Hill,Staten Island,far,0.0,12.127,far:Staten Island:2
+119,Highbridge,Bronx,far,0.0,7.747,far:Bronx:1
+120,Highbridge Park,Manhattan,far,0.0,7.668,far:Manhattan:2
+121,Hillcrest/Pomonok,Queens,far,0.0,12.329,far:Queens:5
+122,Hollis,Queens,far,0.0,16.491,far:Queens:7
+123,Homecrest,Brooklyn,far,0.0,10.415,far:Brooklyn:2
+124,Howard Beach,Queens,far,0.0,10.513,far:Queens:4
+125,Hudson Sq,Manhattan,core,0.917,0.0,core:Manhattan:6
+126,Hunts Point,Bronx,far,0.0,6.96,far:Bronx:3
+127,Inwood,Manhattan,far,0.0,10.855,far:Manhattan:2
+128,Inwood Hill Park,Manhattan,far,0.0,11.679,far:Manhattan:2
+129,Jackson Heights,Queens,far,0.0,4.964,far:Queens:10
+130,Jamaica,Queens,far,0.0,13.373,far:Queens:5
+131,Jamaica Estates,Queens,far,0.0,14.572,far:Queens:7
+132,JFK Airport,Queens,airport_or_unknown,0.0,13.158,airport_or_unknown:Queens:1
+133,Kensington,Brooklyn,far,0.0,6.292,far:Brooklyn:6
+134,Kew Gardens,Queens,far,0.0,11.013,far:Queens:5
+135,Kew Gardens Hills,Queens,far,0.0,10.443,far:Queens:5
+136,Kingsbridge Heights,Bronx,far,0.0,11.517,far:Bronx:1
+137,Kips Bay,Manhattan,core,0.9054,0.0,core:Manhattan:4
+138,LaGuardia Airport,Queens,airport_or_unknown,0.0,5.902,airport_or_unknown:Queens:2
+139,Laurelton,Queens,far,0.0,18.649,far:Queens:6
+140,Lenox Hill East,Manhattan,mixed,0.0158,0.0,mixed:Manhattan:3
+141,Lenox Hill West,Manhattan,mixed,0.0498,0.0,mixed:Manhattan:4
+142,Lincoln Square East,Manhattan,mixed,0.1414,0.0,mixed:Manhattan:5
+143,Lincoln Square West,Manhattan,mixed,0.1259,0.0,mixed:Manhattan:6
+144,Little Italy/NoLiTa,Manhattan,core,1.0,0.0,core:Manhattan:6
+145,Long Island City/Hunters Point,Queens,near,0.0,0.773,near:Queens:1
+146,Long Island City/Queens Plaza,Queens,near,0.0,1.442,near:Queens:1
+147,Longwood,Bronx,far,0.0,7.329,far:Bronx:3
+148,Lower East Side,Manhattan,core,1.0,0.0,core:Manhattan:5
+149,Madison,Brooklyn,far,0.0,10.761,far:Brooklyn:2
+150,Manhattan Beach,Brooklyn,far,0.0,13.401,far:Brooklyn:2
+151,Manhattan Valley,Manhattan,near,0.0,2.991,near:Manhattan:2
+152,Manhattanville,Manhattan,far,0.0,5.34,far:Manhattan:1
+153,Marble Hill,Manhattan,far,0.0,13.002,far:Manhattan:2
+154,Marine Park/Floyd Bennett Field,Brooklyn,far,0.0,11.728,far:Brooklyn:1
+155,Marine Park/Mill Basin,Brooklyn,far,0.0,10.037,far:Brooklyn:1
+156,Mariners Harbor,Staten Island,far,0.0,12.698,far:Staten Island:1
+157,Maspeth,Queens,far,0.0,4.164,far:Queens:9
+158,Meatpacking/West Village West,Manhattan,core,0.8008,0.0,core:Manhattan:6
+159,Melrose South,Bronx,far,0.0,6.836,far:Bronx:3
+160,Middle Village,Queens,far,0.0,5.817,far:Queens:9
+161,Midtown Center,Manhattan,core,1.0,0.0,core:Manhattan:2
+162,Midtown East,Manhattan,core,1.0,0.0,core:Manhattan:2
+163,Midtown North,Manhattan,core,1.0,0.0,core:Manhattan:2
+164,Midtown South,Manhattan,core,1.0,0.0,core:Manhattan:1
+165,Midwood,Brooklyn,far,0.0,8.496,far:Brooklyn:2
+166,Morningside Heights,Manhattan,far,0.0,4.024,far:Manhattan:1
+167,Morrisania/Melrose,Bronx,far,0.0,7.974,far:Bronx:3
+168,Mott Haven/Port Morris,Bronx,far,0.0,5.495,far:Bronx:3
+169,Mount Hope,Bronx,far,0.0,10.048,far:Bronx:1
+170,Murray Hill,Manhattan,core,1.0,0.0,core:Manhattan:1
+171,Murray Hill-Queens,Queens,far,0.0,11.216,far:Queens:8
+172,New Dorp/Midland Beach,Staten Island,far,0.0,14.984,far:Staten Island:2
+173,North Corona,Queens,far,0.0,7.178,far:Queens:10
+174,Norwood,Bronx,far,0.0,13.518,far:Bronx:5
+175,Oakland Gardens,Queens,far,0.0,16.187,far:Queens:7
+176,Oakwood,Staten Island,far,0.0,16.712,far:Staten Island:2
+177,Ocean Hill,Brooklyn,far,0.0,5.603,far:Brooklyn:5
+178,Ocean Parkway South,Brooklyn,far,0.0,8.645,far:Brooklyn:2
+179,Old Astoria,Queens,near,0.0,2.118,near:Queens:1
+180,Ozone Park,Queens,far,0.0,10.171,far:Queens:4
+181,Park Slope,Brooklyn,near,0.0,2.765,near:Brooklyn:1
+182,Parkchester,Bronx,far,0.0,11.521,far:Bronx:2
+183,Pelham Bay,Bronx,far,0.0,13.892,far:Bronx:6
+184,Pelham Bay Park,Bronx,far,0.0,14.542,far:Bronx:7
+185,Pelham Parkway,Bronx,far,0.0,12.802,far:Bronx:7
+186,Penn Station/Madison Sq West,Manhattan,core,1.0,0.0,core:Manhattan:1
+187,Port Richmond,Staten Island,far,0.0,11.066,far:Staten Island:1
+188,Prospect-Lefferts Gardens,Brooklyn,far,0.0,5.328,far:Brooklyn:6
+189,Prospect Heights,Brooklyn,near,0.0,3.012,near:Brooklyn:2
+190,Prospect Park,Brooklyn,far,0.0,4.187,far:Brooklyn:6
+191,Queens Village,Queens,far,0.0,17.44,far:Queens:7
+192,Queensboro Hill,Queens,far,0.0,10.498,far:Queens:8
+193,Queensbridge/Ravenswood,Queens,near,0.0,0.785,near:Queens:1
+194,Randalls Island,Manhattan,near,0.0,3.314,near:Manhattan:2
+195,Red Hook,Brooklyn,near,0.0,1.502,near:Brooklyn:1
+196,Rego Park,Queens,far,0.0,7.73,far:Queens:10
+197,Richmond Hill,Queens,far,0.0,10.715,far:Queens:5
+198,Ridgewood,Queens,far,0.0,4.193,far:Queens:9
+199,Rikers Island,Bronx,far,0.0,6.593,far:Bronx:3
+200,Riverdale/North Riverdale/Fieldston,Bronx,far,0.0,13.922,far:Bronx:5
+201,Rockaway Park,Queens,far,0.0,17.796,far:Queens:2
+202,Roosevelt Island,Manhattan,near,0.0,0.327,near:Manhattan:2
+203,Rosedale,Queens,far,0.0,19.006,far:Queens:6
+204,Rossville/Woodrow,Staten Island,far,0.0,22.632,far:Staten Island:3
+205,Saint Albans,Queens,far,0.0,16.379,far:Queens:6
+206,Saint George/New Brighton,Staten Island,far,0.0,7.901,far:Staten Island:1
+207,Saint Michaels Cemetery/Woodside,Queens,far,0.0,4.705,far:Queens:10
+208,Schuylerville/Edgewater Park,Bronx,far,0.0,11.481,far:Bronx:6
+209,Seaport,Manhattan,core,0.8058,0.0,core:Manhattan:3
+210,Sheepshead Bay,Brooklyn,far,0.0,12.283,far:Brooklyn:2
+211,SoHo,Manhattan,core,1.0,0.0,core:Manhattan:6
+212,Soundview/Bruckner,Bronx,far,0.0,9.458,far:Bronx:2
+213,Soundview/Castle Hill,Bronx,far,0.0,9.268,far:Bronx:2
+214,South Beach/Dongan Hills,Staten Island,far,0.0,12.495,far:Staten Island:1
+215,South Jamaica,Queens,far,0.0,14.071,far:Queens:5
+216,South Ozone Park,Queens,far,0.0,11.96,far:Queens:5
+217,South Williamsburg,Brooklyn,near,0.0,0.84,near:Brooklyn:4
+218,Springfield Gardens North,Queens,far,0.0,16.437,far:Queens:6
+219,Springfield Gardens South,Queens,far,0.0,15.558,far:Queens:6
+220,Spuyten Duyvil/Kingsbridge,Bronx,far,0.0,12.975,far:Bronx:5
+221,Stapleton,Staten Island,far,0.0,8.557,far:Staten Island:1
+222,Starrett City,Brooklyn,far,0.0,9.901,far:Brooklyn:5
+223,Steinway,Queens,near,0.0,3.39,near:Queens:1
+224,Stuy Town/Peter Cooper Village,Manhattan,core,0.882,0.0,core:Manhattan:4
+225,Stuyvesant Heights,Brooklyn,near,0.0,3.095,near:Brooklyn:3
+226,Sunnyside,Queens,near,0.0,1.998,near:Queens:1
+227,Sunset Park East,Brooklyn,far,0.0,5.236,far:Brooklyn:3
+228,Sunset Park West,Brooklyn,near,0.0,3.233,near:Brooklyn:1
+229,Sutton Place/Turtle Bay North,Manhattan,core,0.9119,0.0,core:Manhattan:2
+230,Times Sq/Theatre District,Manhattan,core,1.0,0.0,core:Manhattan:2
+231,TriBeCa/Civic Center,Manhattan,core,0.9201,0.0,core:Manhattan:6
+232,Two Bridges/Seward Park,Manhattan,core,0.9018,0.0,core:Manhattan:5
+233,UN/Turtle Bay South,Manhattan,core,0.86,0.0,core:Manhattan:2
+234,Union Sq,Manhattan,core,1.0,0.0,core:Manhattan:1
+235,University Heights/Morris Heights,Bronx,far,0.0,9.62,far:Bronx:1
+236,Upper East Side North,Manhattan,surcharge_ring,0.0,1.349,surcharge_ring:Manhattan:1
+237,Upper East Side South,Manhattan,mixed,0.069,0.0,mixed:Manhattan:7
+238,Upper West Side North,Manhattan,surcharge_ring,0.0,2.094,surcharge_ring:Manhattan:2
+239,Upper West Side South,Manhattan,surcharge_ring,0.0,0.949,surcharge_ring:Manhattan:3
+240,Van Cortlandt Park,Bronx,far,0.0,14.774,far:Bronx:4
+241,Van Cortlandt Village,Bronx,far,0.0,12.939,far:Bronx:5
+242,Van Nest/Morris Park,Bronx,far,0.0,11.475,far:Bronx:7
+243,Washington Heights North,Manhattan,far,0.0,9.384,far:Manhattan:2
+244,Washington Heights South,Manhattan,far,0.0,7.659,far:Manhattan:2
+245,West Brighton,Staten Island,far,0.0,9.334,far:Staten Island:1
+246,West Chelsea/Hudson Yards,Manhattan,core,0.8346,0.0,core:Manhattan:1
+247,West Concourse,Bronx,far,0.0,6.402,far:Bronx:1
+248,West Farms/Bronx River,Bronx,far,0.0,9.94,far:Bronx:2
+249,West Village,Manhattan,core,1.0,0.0,core:Manhattan:6
+250,Westchester Village/Unionport,Bronx,far,0.0,11.21,far:Bronx:2
+251,Westerleigh,Staten Island,far,0.0,11.96,far:Staten Island:1
+252,Whitestone,Queens,far,0.0,10.428,far:Queens:8
+253,Willets Point,Queens,far,0.0,9.451,far:Queens:8
+254,Williamsbridge/Olinville,Bronx,far,0.0,14.522,far:Bronx:4
+255,Williamsburg (North Side),Brooklyn,near,0.0,0.512,near:Brooklyn:4
+256,Williamsburg (South Side),Brooklyn,near,0.0,0.508,near:Brooklyn:4
+257,Windsor Terrace,Brooklyn,far,0.0,4.755,far:Brooklyn:6
+258,Woodhaven,Queens,far,0.0,9.253,far:Queens:4
+259,Woodlawn/Wakefield,Bronx,far,0.0,16.564,far:Bronx:4
+260,Woodside,Queens,far,0.0,4.104,far:Queens:10
+261,World Trade Center,Manhattan,core,0.8236,0.0,core:Manhattan:3
+262,Yorkville East,Manhattan,surcharge_ring,0.0,1.518,surcharge_ring:Manhattan:4
+263,Yorkville West,Manhattan,surcharge_ring,0.0,1.516,surcharge_ring:Manhattan:5
+264,Unknown,Unknown,airport_or_unknown,0.0,,none
+265,Outside of NYC,Unknown,airport_or_unknown,0.0,,none
