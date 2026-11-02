@@ -36,6 +36,10 @@ src = ["src", "tests"]
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM", "NPY", "RUF"]
 
+# Most of this file is the article itself, as prose in an f-string.
+[tool.ruff.lint.per-file-ignores]
+"src/cordon/report.py" = ["E501"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"

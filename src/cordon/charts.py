@@ -17,6 +17,7 @@ from pathlib import Path
 from . import config
 
 ASSETS = Path(__file__).parent / "assets"
+PLOT_INSET = 32
 MINUS = "\u2212"
 
 
@@ -84,12 +85,20 @@ def year_axis(x: Linear, y_bottom: float, top: float, years: Sequence[int]) -> s
     return "".join(parts)
 
 
-def y_axis(y: Linear, left: float, right: float, ticks: Sequence[float], suffix: str = "%") -> str:
+def y_axis(
+    y: Linear,
+    left: float,
+    right: float,
+    ticks: Sequence[float],
+    suffix: str = "%",
+    signed: bool = True,
+) -> str:
     parts = []
     for tick in ticks:
         py = y(tick)
         cls = "zero" if tick == 0 else "grid"
-        label = f"{tick:+g}{suffix}".replace("-", MINUS) if tick else f"0{suffix}"
+        number = f"{tick:+g}" if signed else f"{tick:g}"
+        label = f"{number}{suffix}".replace("-", MINUS) if tick else f"0{suffix}"
         parts.append(f'<line class="{cls}" x1="{left}" x2="{right}" y1="{py:.1f}" y2="{py:.1f}"/>')
         parts.append(f'<text x="{left}" y="{py - 5:.1f}">{label}</text>')
     return "".join(parts)
@@ -104,10 +113,16 @@ def start_marker(x: Linear, top: float, bottom: float, text: str = "Tolling star
 
 
 def event_study_chart(
-    core: list[dict], title: str, description: str, ymin: float, ymax: float, height: int = 380
+    core: list[dict],
+    title: str,
+    description: str,
+    ymin: float,
+    ymax: float,
+    height: int = 380,
+    width: int = 760,
 ) -> str:
-    width, left, right, top, bottom = 760, 8, 752, 26, height - 28
-    x = Linear(core[0]["week"], core[-1]["week"] + 4, left, right)
+    left, right, top, bottom = 8, width - 8, 26, height - 28
+    x = Linear(core[0]["week"], core[-1]["week"] + 4, left + PLOT_INSET, right)
     y = Linear(ymin, ymax, bottom, top)
     out = [svg_open(width, height, title, description)]
     out.append(y_axis(y, left, right, nice_ticks(ymin, ymax, 6)))
@@ -136,7 +151,7 @@ def event_study_chart(
     middle = (gap_left + gap_right) / 2
     out.append(
         f'<text class="note" text-anchor="middle" x="{middle:.1f}" y="{y(0) - 8:.1f}">'
-        "2024 is the reference year</text>"
+        f"{'2024: reference' if width < 600 else '2024 is the reference year'}</text>"
     )
     out.append(start_marker(x, top, bottom))
     out.append("</svg>")
@@ -154,13 +169,15 @@ def series_chart(
     height: int = 340,
     suffix: str = "%",
     label_at: dict[str, tuple[float, float]] | None = None,
+    width: int = 760,
+    signed_axis: bool = True,
 ) -> str:
     """Lines against weeks. `series` maps a direct label to (values, css colour name)."""
-    width, left, right, top, bottom = 760, 8, 752, 26, height - 28
-    x = Linear(weeks[0], weeks[-1], left, right)
+    left, right, top, bottom = 8, width - 8, 26, height - 28
+    x = Linear(weeks[0], weeks[-1], left + PLOT_INSET, right)
     y = Linear(ymin, ymax, bottom, top)
     out = [svg_open(width, height, title, description)]
-    out.append(y_axis(y, left, right, nice_ticks(ymin, ymax, 6), suffix))
+    out.append(y_axis(y, left, right, nice_ticks(ymin, ymax, 6), suffix, signed_axis))
     years = range(date_of_week(weeks[0]).year, date_of_week(weeks[-1]).year + 2)
     out.append(year_axis(x, bottom, top, list(years)))
     for ghost in ghosts:
@@ -180,7 +197,7 @@ def series_chart(
         for name in names:
             value = series[name][0][i]
             if value is not None:
-                lines.append(f"{name}: {fmt_pct(value)}")
+                lines.append(f"{name}: {fmt_pct(value, sign=signed_axis)}")
         out.append(
             f'<rect class="hit" x="{x(k):.1f}" y="{top}" '
             f'width="{(right - left) / len(weeks) * step + 1:.1f}" height="{bottom - top}" '
@@ -199,39 +216,45 @@ def interval_chart(
     xmax: float,
     label_width: int = 250,
     row_height: int = 27,
+    width: int = 760,
 ) -> str:
-    """Dot and interval rows. Keys: label, value, low, high, optional section and emphasis."""
-    width = 760
+    """Dot and interval rows. Keys: label, value, low, high, optional section and emphasis.
+
+    Below 600 units there is no room for a label column, so each label sits above its interval.
+    """
+    stacked = width < 600
+    row_height = 44 if stacked else row_height
     sections = []
     for row in rows:
         section = row.get("section")
         if section and section not in sections:
             sections.append(section)
-    height = 34 + row_height * len(rows) + 26 * len(sections) + 26
-    left, right = label_width, width - 16
+    height = 34 + row_height * len(rows) + 30 * len(sections) + 26
+    left, right = (12, width - 12) if stacked else (label_width, width - 16)
     x = Linear(xmin, xmax, left, right)
     bottom = height - 26
     out = [svg_open(width, height, title, description)]
-    for tick in nice_ticks(xmin, xmax, 6):
+    for tick in nice_ticks(xmin, xmax, 4 if stacked else 6):
         px = x(tick)
         cls = "zero" if tick == 0 else "grid"
         label = f"{tick:+g}%".replace("-", MINUS) if tick else "0%"
         out.append(f'<line class="{cls}" x1="{px:.1f}" x2="{px:.1f}" y1="10" y2="{bottom}"/>')
         out.append(f'<text text-anchor="middle" x="{px:.1f}" y="{bottom + 16}">{label}</text>')
-    cursor = 18.0
+    cursor = 14.0
     current = None
     for row in rows:
         if row.get("section") != current:
             current = row.get("section")
             if current:
-                cursor += 12
+                cursor += 16
                 out.append(f'<text class="note" x="0" y="{cursor:.1f}">{escape(current)}</text>')
-                cursor += 14
-        cy = cursor + row_height / 2
+                cursor += 12
         strong = row.get("emphasis")
         tone = "blue" if strong else "ink"
         cls = "label" if strong else ""
-        out.append(f'<text class="{cls}" x="0" y="{cy + 4:.1f}">{escape(row["label"])}</text>')
+        cy = cursor + (31 if stacked else row_height / 2)
+        label_y = cursor + 14 if stacked else cy + 4
+        out.append(f'<text class="{cls}" x="0" y="{label_y:.1f}">{escape(row["label"])}</text>')
         clipped_low = max(row["low"], xmin) if row.get("low") is not None else None
         clipped_high = min(row["high"], xmax) if row.get("high") is not None else None
         tip = f"{row['label']}: {fmt_pct(row['value'])}"
@@ -260,9 +283,10 @@ def strip_chart(
     xmax: float,
     actual_label: str,
     placebo_label: str,
+    width: int = 760,
 ) -> str:
     """One row of grey placebo dots beside the highlighted real estimate."""
-    width, height, left, right = 760, 150, 14, 746
+    height, left, right = 150, 14, width - 14
     x = Linear(xmin, xmax, left, right)
     baseline = 86
     out = [svg_open(width, height, title, description)]

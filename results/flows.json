@@ -40,6 +40,14 @@
   }
  ],
  "comparison_charged_share": 0.006908832035168408,
+ "group_charged_share": {
+  "surcharge_ring": 0.08092616975733806,
+  "near": 0.015654172162883864,
+  "far": 0.003561230563327569
+ },
+ "core_rate_week_before": 0.0008435596070775604,
+ "core_rate_first_week": 0.9831467867068381,
+ "core_rate_lowest_quarter_by_service": 0.956514539737472,
  "mechanism": {
   "within_core_hv": {
    "2024": {

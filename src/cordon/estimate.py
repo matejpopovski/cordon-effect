@@ -538,6 +538,29 @@ def flow_summary(frames: pl.DataFrame) -> dict:
         .item()
     )
 
+    outside_ends = ["surcharge_ring", "near", "far"]
+
+    def group_share(group: str) -> float:
+        mine = post.filter(
+            pl.col("pu_group").is_in(outside_ends)
+            & pl.col("do_group").is_in(outside_ends)
+            & ((pl.col("pu_group") == group) | (pl.col("do_group") == group))
+        )
+        return mine["charged"].sum() / mine["trips"].sum()
+
+    core_only = labelled.filter(pl.col("touch") == "touches core")
+
+    def week_rate(week: int) -> float:
+        subset = core_only.filter(pl.col("week") == week)
+        return subset["charged"].sum() / subset["trips"].sum()
+
+    quarters = (
+        core_only.filter(pl.col("week") >= 0)
+        .with_columns((pl.col("week") // 13).alias("quarter"))
+        .group_by("quarter", "service")
+        .agg((pl.col("charged").sum() / pl.col("trips").sum()).alias("rate"))
+    )
+
     def yearly(where: pl.Expr, service: str) -> dict:
         subset = frames.filter(where & (pl.col("service") == service))
 
@@ -561,6 +584,10 @@ def flow_summary(frames: pl.DataFrame) -> dict:
         "charged_share_pre": rate_table(pre_charge),
         "charged_share_post": rate_table(post),
         "comparison_charged_share": comparison,
+        "group_charged_share": {g: group_share(g) for g in outside_ends},
+        "core_rate_week_before": week_rate(-1),
+        "core_rate_first_week": week_rate(0),
+        "core_rate_lowest_quarter_by_service": float(quarters["rate"].min()),
         "mechanism": {
             f"{name}_{service}": yearly(where, service)
             for service in ("hv", "yellow")

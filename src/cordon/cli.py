@@ -29,6 +29,7 @@ def main() -> None:
     estimate.add_argument("--draws", type=int, default=config.WILD_DRAWS)
 
     stages.add_parser("report", help="render the site from results/")
+    stages.add_parser("feecheck", help="record charge amounts around January 2026 (network)")
 
     args = parser.parse_args()
     if args.stage == "zones":
@@ -51,6 +52,10 @@ def main() -> None:
         from .report import report_stage
 
         report_stage()
+    elif args.stage == "feecheck":
+        from .pipeline import fee_check_stage
+
+        fee_check_stage()
 
 
 if __name__ == "__main__":

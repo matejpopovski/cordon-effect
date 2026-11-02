@@ -68,7 +68,7 @@ def drop_reversal_twins(lf: pl.LazyFrame) -> pl.LazyFrame:
     A negative amount does not mean a reversal. From January 2025 a large and growing number
     of Flex Fare rows carry small negative amounts with no positive twin, and their distances
     and durations match ordinary Flex trips, so they are real trips. Filtering on the sign
-    would delete them almost entirely after the toll started and fake a fall in yellow trips.
+    would delete them mostly after the toll started and fake a fall in yellow trips.
     Only a matched pair is a reversal, so matching on the key removes exactly those.
     """
     return lf.unique(subset=list(TRIP_KEY), keep="any")

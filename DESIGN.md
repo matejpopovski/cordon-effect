@@ -264,8 +264,8 @@ December 2024 to 4.2% in January 2025 and about 7% by May 2025. Row-level inspec
 2024, February 2025 and May 2025 found that most new negative rows are Flex Fare rows
 (`payment_type` 0) from vendor 2 with no positive twin, and that their median distance and
 duration (2.47 miles, 16.7 minutes) match ordinary Flex trips (2.56 miles, 16.8 minutes). They
-are real trips with odd amount coding. A sign filter would have deleted them almost only after
-the toll began and created a false fall in yellow trips. The rule is now: a reversal is a pair of
+are real trips with odd amount coding. A sign filter would have deleted them mostly after the
+toll began and created a false fall in yellow trips. The rule is now: a reversal is a pair of
 rows sharing vendor, pickup time, dropoff time and both zones, and one row of each pair is kept.
 Unpaired negative rows are kept. The check looked at row counts and citywide daily totals. No
 treated-versus-comparison outcome had been computed.

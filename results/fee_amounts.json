@@ -1,0 +1,122 @@
+{
+ "yellow_2025-12": {
+  "cbd_congestion_fee": [
+   {
+    "amount": 0.75,
+    "rows": 3059211
+   },
+   {
+    "amount": 0.0,
+    "rows": 1212745
+   },
+   {
+    "amount": -0.75,
+    "rows": 33050
+   }
+  ],
+  "congestion_surcharge": [
+   {
+    "amount": 2.5,
+    "rows": 2733570
+   },
+   {
+    "amount": null,
+    "rows": 1195482
+   },
+   {
+    "amount": 0.0,
+    "rows": 337088
+   }
+  ]
+ },
+ "yellow_2026-02": {
+  "cbd_congestion_fee": [
+   {
+    "amount": 0.75,
+    "rows": 2385966
+   },
+   {
+    "amount": 0.0,
+    "rows": 996421
+   },
+   {
+    "amount": -0.75,
+    "rows": 17479
+   }
+  ],
+  "congestion_surcharge": [
+   {
+    "amount": 2.5,
+    "rows": 2086570
+   },
+   {
+    "amount": null,
+    "rows": 1023317
+   },
+   {
+    "amount": 0.0,
+    "rows": 268699
+   }
+  ]
+ },
+ "hv_2025-12": {
+  "cbd_congestion_fee": [
+   {
+    "amount": 0.0,
+    "rows": 14999948
+   },
+   {
+    "amount": 1.5,
+    "rows": 7108488
+   },
+   {
+    "amount": 3.0,
+    "rows": 2
+   }
+  ],
+  "congestion_surcharge": [
+   {
+    "amount": 0.0,
+    "rows": 14573412
+   },
+   {
+    "amount": 2.75,
+    "rows": 7395786
+   },
+   {
+    "amount": 0.75,
+    "rows": 139239
+   }
+  ]
+ },
+ "hv_2026-02": {
+  "cbd_congestion_fee": [
+   {
+    "amount": 0.0,
+    "rows": 13608532
+   },
+   {
+    "amount": 1.5,
+    "rows": 6267142
+   },
+   {
+    "amount": 3.0,
+    "rows": 12
+   }
+  ],
+  "congestion_surcharge": [
+   {
+    "amount": 0.0,
+    "rows": 13158586
+   },
+   {
+    "amount": 2.75,
+    "rows": 6583960
+   },
+   {
+    "amount": 0.75,
+    "rows": 133133
+   }
+  ]
+ }
+}

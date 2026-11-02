@@ -5,6 +5,8 @@ from __future__ import annotations
 import json
 import time
 
+import polars as pl
+
 from . import build, config, download, geography
 
 
@@ -50,3 +52,31 @@ def build_stage(first: tuple[int, int], last: tuple[int, int], keep_raw: bool = 
                 flush=True,
             )
             del table
+
+
+def fee_check_stage() -> None:
+    """Record charge amounts either side of January 2026, reading only those two columns.
+
+    The event study has a step in January 2026. This is the check that the charge itself did
+    not change then. Remote parquet is scanned by byte range, so little is downloaded.
+    """
+    columns = ("cbd_congestion_fee", "congestion_surcharge")
+    out = {}
+    for service in download.SERVICES:
+        for year, month in ((2025, 12), (2026, 2)):
+            lazy = pl.scan_parquet(download.trip_url(service, year, month))
+            entry = {}
+            for column in columns:
+                counts = (
+                    lazy.group_by(column)
+                    .agg(pl.len().alias("rows"))
+                    .sort("rows", descending=True)
+                    .head(3)
+                    .collect(engine="streaming")
+                )
+                entry[column] = [
+                    {"amount": row[column], "rows": row["rows"]} for row in counts.to_dicts()
+                ]
+            out[f"{service}_{year}-{month:02d}"] = entry
+    (config.RESULTS / "fee_amounts.json").write_text(json.dumps(out, indent=1) + "\n")
+    print(json.dumps(out, indent=1))

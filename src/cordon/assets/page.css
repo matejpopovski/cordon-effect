@@ -64,6 +64,7 @@ code { font: .86em ui-monospace, SFMono-Regular, Menlo, monospace; }
 pre { font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--grid);
   padding: 12px 14px; border-radius: 6px; overflow-x: auto; }
 .mapwrap { max-width: 560px; }
+.narrow-only { display: none; }
 #tip { position: fixed; z-index: 10; pointer-events: none; display: none; max-width: 300px;
   background: var(--ink); color: var(--surface); padding: 6px 9px; border-radius: 5px;
   font: 13px/1.35 ui-sans-serif, -apple-system, "Segoe UI", Roboto, sans-serif; }
@@ -73,5 +74,6 @@ footer { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 18px;
   body { font-size: 18px; }
   .stats { grid-template-columns: 1fr; gap: 12px; }
   header.hero { padding-top: 30px; }
-  figure .chart text { font-size: 13px; }
+  .wide-only { display: none; }
+  .narrow-only { display: block; }
 }
