@@ -1,0 +1,170 @@
+[
+ {
+  "cluster": "far:Bronx:1",
+  "beta": -0.010062827825302214,
+  "percent": -1.001236697483865,
+  "zones": 11
+ },
+ {
+  "cluster": "far:Bronx:2",
+  "beta": 0.01504649695781095,
+  "percent": 1.5160265382395233,
+  "zones": 5
+ },
+ {
+  "cluster": "far:Bronx:3",
+  "beta": 0.008950733705075393,
+  "percent": 0.8990911305539973,
+  "zones": 5
+ },
+ {
+  "cluster": "far:Bronx:4",
+  "beta": 0.038037870615016595,
+  "percent": 3.8770571013998723,
+  "zones": 3
+ },
+ {
+  "cluster": "far:Bronx:5",
+  "beta": 0.0038803774500560813,
+  "percent": 0.38879158621076826,
+  "zones": 7
+ },
+ {
+  "cluster": "far:Bronx:6",
+  "beta": 0.002265367380386108,
+  "percent": 0.22679352637704486,
+  "zones": 4
+ },
+ {
+  "cluster": "far:Bronx:7",
+  "beta": 0.0005954619342553036,
+  "percent": 0.059563925690753194,
+  "zones": 7
+ },
+ {
+  "cluster": "far:Brooklyn:1",
+  "beta": -0.03139905356278677,
+  "percent": -3.0911222424250706,
+  "zones": 3
+ },
+ {
+  "cluster": "far:Brooklyn:2",
+  "beta": 0.026351864102701808,
+  "percent": 2.670214455258346,
+  "zones": 7
+ },
+ {
+  "cluster": "far:Brooklyn:3",
+  "beta": -0.0054019275019476665,
+  "percent": -0.5387363328250849,
+  "zones": 4
+ },
+ {
+  "cluster": "far:Brooklyn:4",
+  "beta": 0.04841402865278119,
+  "percent": 4.960513197411642,
+  "zones": 5
+ },
+ {
+  "cluster": "far:Brooklyn:5",
+  "beta": -0.022549943557105753,
+  "percent": -2.2297593962002704,
+  "zones": 7
+ },
+ {
+  "cluster": "far:Brooklyn:6",
+  "beta": -0.04402562816485199,
+  "percent": -4.307056718646884,
+  "zones": 10
+ },
+ {
+  "cluster": "far:Manhattan:1",
+  "beta": -0.040419139504569546,
+  "percent": -3.9613181274241405,
+  "zones": 5
+ },
+ {
+  "cluster": "far:Manhattan:2",
+  "beta": -0.02757047919318455,
+  "percent": -2.7193882453010465,
+  "zones": 6
+ },
+ {
+  "cluster": "far:Queens:1",
+  "beta": 0.053265998440529164,
+  "percent": 5.471015906708776,
+  "zones": 2
+ },
+ {
+  "cluster": "far:Queens:10",
+  "beta": 0.02965705762748787,
+  "percent": 3.0101208019556847,
+  "zones": 12
+ },
+ {
+  "cluster": "far:Queens:2",
+  "beta": 0.03768428788556136,
+  "percent": 3.840334460650552,
+  "zones": 2
+ },
+ {
+  "cluster": "far:Queens:3",
+  "beta": 0.05143969825350699,
+  "percent": 5.278569956160584,
+  "zones": 1
+ },
+ {
+  "cluster": "far:Queens:4",
+  "beta": -0.0012495203928710491,
+  "percent": -0.12487400673096838,
+  "zones": 3
+ },
+ {
+  "cluster": "far:Queens:5",
+  "beta": -0.003225563357803528,
+  "percent": -0.32203668170746047,
+  "zones": 9
+ },
+ {
+  "cluster": "far:Queens:6",
+  "beta": -0.003767516547261841,
+  "percent": -0.3760428361208379,
+  "zones": 6
+ },
+ {
+  "cluster": "far:Queens:7",
+  "beta": 0.03695699157988441,
+  "percent": 3.7648392260475116,
+  "zones": 8
+ },
+ {
+  "cluster": "far:Queens:8",
+  "beta": 0.03888307203392884,
+  "percent": 3.964891250999547,
+  "zones": 10
+ },
+ {
+  "cluster": "far:Queens:9",
+  "beta": 0.01192138615845584,
+  "percent": 1.19927291028199,
+  "zones": 5
+ },
+ {
+  "cluster": "far:Staten Island:1",
+  "beta": 0.017966122271017945,
+  "percent": 1.8128483924686467,
+  "zones": 10
+ },
+ {
+  "cluster": "far:Staten Island:2",
+  "beta": 0.024055042930083263,
+  "percent": 2.4346699382661097,
+  "zones": 4
+ },
+ {
+  "cluster": "far:Staten Island:3",
+  "beta": 0.043268484046719666,
+  "percent": 4.4218213149958,
+  "zones": 5
+ }
+]

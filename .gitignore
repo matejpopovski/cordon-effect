@@ -8,3 +8,6 @@ __pycache__/
 # TLC trip records and per-month intermediates are large; only aggregates are committed.
 data/raw/
 data/interim/
+
+# Rendered by `cordon report` and published by the Pages workflow.
+site/

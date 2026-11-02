@@ -1,0 +1,7 @@
+{
+ "hardware": "Apple M3 Max, 14 cores, 36 GB, shared with other jobs",
+ "source": "/usr/bin/time -l, POLARS_MAX_THREADS=6 for build and panel, 4 BLAS threads for estimate",
+ "build": {"command": "cordon build", "seconds": 908, "peak_rss_gb": 3.65, "rows_scanned_note": "114 parquet files, one month at a time"},
+ "panel": {"command": "cordon panel", "seconds": 3, "peak_rss_gb": 2.46},
+ "estimate": {"command": "cordon estimate", "seconds": 62, "peak_rss_gb": 3.81}
+}

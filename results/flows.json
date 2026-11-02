@@ -1,0 +1,93 @@
+{
+ "charged_share_pre": [
+  {
+   "touch": "neither",
+   "trips": 431491358,
+   "charged": 105,
+   "rate": 2.4334206943722845e-07
+  },
+  {
+   "touch": "touches core",
+   "trips": 332777509,
+   "charged": 1416,
+   "rate": 4.255095256452563e-06
+  },
+  {
+   "touch": "touches mixed, not core",
+   "trips": 38269988,
+   "charged": 58,
+   "rate": 1.5155479013999168e-06
+  }
+ ],
+ "charged_share_post": [
+  {
+   "touch": "neither",
+   "trips": 290186001,
+   "charged": 3766379,
+   "rate": 0.012979189164952172
+  },
+  {
+   "touch": "touches core",
+   "trips": 191946333,
+   "charged": 189518855,
+   "rate": 0.9873533504805221
+  },
+  {
+   "touch": "touches mixed, not core",
+   "trips": 23315262,
+   "charged": 6541388,
+   "rate": 0.2805624916417409
+  }
+ ],
+ "comparison_charged_share": 0.006908832035168408,
+ "mechanism": {
+  "within_core_hv": {
+   "2024": {
+    "fare_per_trip": 20.666275239460656,
+    "mph": 8.332270491457296,
+    "trips_per_week": 693264.5961538461
+   },
+   "2025": {
+    "fare_per_trip": 22.453453900364632,
+    "mph": 8.391416619969347,
+    "trips_per_week": 653507.7692307692
+   }
+  },
+  "far_to_far_hv": {
+   "2024": {
+    "fare_per_trip": 16.76791977951514,
+    "mph": 13.967811731440259,
+    "trips_per_week": 1522456.6153846155
+   },
+   "2025": {
+    "fare_per_trip": 16.705125390937337,
+    "mph": 13.811157755770036,
+    "trips_per_week": 1631461.0576923077
+   }
+  },
+  "within_core_yellow": {
+   "2024": {
+    "fare_per_trip": 13.27245384356172,
+    "mph": 7.883390648981693,
+    "trips_per_week": 317373.3846153846
+   },
+   "2025": {
+    "fare_per_trip": 13.331692154953767,
+    "mph": 8.100478318768733,
+    "trips_per_week": 361217.3653846154
+   }
+  },
+  "far_to_far_yellow": {
+   "2024": {
+    "fare_per_trip": 23.821508255243195,
+    "mph": 12.845025522007544,
+    "trips_per_week": 9249.923076923076
+   },
+   "2025": {
+    "fare_per_trip": 22.8203841900471,
+    "mph": 13.84486439021218,
+    "trips_per_week": 25413.653846153848
+   }
+  }
+ }
+}

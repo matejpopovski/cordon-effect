@@ -77,13 +77,14 @@ def zone_week_table(od: pl.LazyFrame) -> pl.LazyFrame:
     """Units by week. `to_core` repeats entering trips at their pickup zone for the naive check."""
     flow, zone = flow_expressions()
     keys = ["week", "service", "zone", "flow", "period"]
-    assigned = od.with_columns(flow, zone).group_by(keys).agg(pl.col("trips", "charged").sum())
+    sums = pl.col("trips", "charged", "flex_trips").sum()
+    assigned = od.with_columns(flow, zone).group_by(keys).agg(sums)
     naive = (
         od.with_columns(flow)
         .filter(pl.col("flow") == "entering")
         .with_columns(pl.lit("to_core").alias("flow"), pl.col("pu").alias("zone"))
         .group_by(keys)
-        .agg(pl.col("trips", "charged").sum())
+        .agg(sums)
     )
     return pl.concat([assigned, naive]).sort(keys)
 

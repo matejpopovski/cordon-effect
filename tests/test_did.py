@@ -71,13 +71,15 @@ def test_thanksgiving_weeks_are_the_weeks_containing_the_holiday():
 def zone_frame() -> tuple[pl.DataFrame, pl.DataFrame]:
     rows = []
     for week in range(-3, 2):
-        rows.append((week, "hv", 1, "entering", "peak", 100))
-        rows.append((week, "hv", 1, "within", "peak", 50))
-        rows.append((week, "yellow", 1, "within", "peak", 40))
-        rows.append((week, "hv", 2, "outside", "peak", 80))
-        rows.append((week, "hv", 2, "to_core", "peak", 7))
+        rows.append((week, "hv", 1, "entering", "peak", 100, 0))
+        rows.append((week, "hv", 1, "within", "peak", 50, 0))
+        rows.append((week, "yellow", 1, "within", "peak", 40, 10))
+        rows.append((week, "hv", 2, "outside", "peak", 80, 0))
+        rows.append((week, "hv", 2, "to_core", "peak", 7, 0))
     frame = pl.DataFrame(
-        rows, schema=["week", "service", "zone", "flow", "period", "trips"], orient="row"
+        rows,
+        schema=["week", "service", "zone", "flow", "period", "trips", "flex_trips"],
+        orient="row",
     )
     zones = pl.DataFrame({"location_id": [1, 2], "group": ["core", "far"], "cluster": ["a", "b"]})
     return frame, zones
@@ -102,6 +104,12 @@ def test_load_panel_filters_service_and_comparison_flows():
         comparison_flows=("outside", "to_core"),
     )
     assert p.counts[0].tolist() == [150.0, 87.0]
+
+
+def test_load_panel_can_exclude_flex_rows():
+    frame, zones = zone_frame()
+    p = did.load_panel(frame, zones, first_week=-3, last_week=1, min_pre_trips=1, exclude_flex=True)
+    assert p.counts[0].tolist() == [180.0, 80.0]
 
 
 def test_load_panel_drops_units_with_any_empty_week():

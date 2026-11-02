@@ -1,0 +1,30 @@
+:root{--surface:#fcfcfb;--ink:#0b0b0b;--ink-2:#52514e;--ink-3:#7b7a74;--rule:#e4e3dd;--grid:#efeee9;
+--blue:#2a78d6;--orange:#eb6834;--aqua:#1baf7a;--violet:#6250d6;--ghost:#c9c8c1}
+svg.chart{display:block;width:100%;height:auto;font-family:ui-sans-serif,-apple-system,"Segoe UI",Roboto,sans-serif}
+.chart text{fill:var(--ink-2);font-size:12px}
+.chart .label{fill:var(--ink);font-size:13px;font-weight:600}
+.chart .note{fill:var(--ink-3);font-size:12px}
+.chart .grid{stroke:var(--grid);stroke-width:1}
+.chart .zero{stroke:var(--ink-3);stroke-width:1}
+.chart .start{stroke:var(--ink);stroke-width:1;stroke-dasharray:3 3}
+.chart .line-blue{fill:none;stroke:var(--blue);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.chart .line-orange{fill:none;stroke:var(--orange);stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+.chart .line-ghost{fill:none;stroke:var(--ghost);stroke-width:1}
+.chart .band-blue{fill:var(--blue);opacity:.14}
+.chart .band-orange{fill:var(--orange);opacity:.14}
+.chart .dot-blue{fill:var(--blue);stroke:var(--surface);stroke-width:2}
+.chart .dot-orange{fill:var(--orange);stroke:var(--surface);stroke-width:2}
+.chart .dot-ghost{fill:var(--ghost);stroke:var(--surface);stroke-width:1.5}
+.chart .bar-blue{stroke:var(--blue);stroke-width:2;stroke-linecap:round}
+.chart .bar-ink{stroke:var(--ink-2);stroke-width:2;stroke-linecap:round}
+.chart .dot-ink{fill:var(--ink-2);stroke:var(--surface);stroke-width:2}
+.chart .zone{stroke:var(--surface);stroke-width:.6}
+.chart .z-core{fill:var(--blue)}
+.chart .z-mixed{fill:#86b6ef}
+.chart .z-ring{fill:var(--orange)}
+.chart .z-near{fill:#f5b79e}
+.chart .z-far{fill:var(--grid)}
+.chart .z-air{fill:var(--ghost)}
+.chart .toll-line{fill:none;stroke:var(--ink);stroke-width:1.2}
+.chart [data-tip]{cursor:default}
+.chart .hit{fill:transparent;stroke:none}

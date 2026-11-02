@@ -257,4 +257,43 @@ The wording is fixed in advance.
 
 ## Deviations from this design
 
-None yet.
+**1. Yellow trip counting, changed before any estimate was run.** The design above says trips
+are counted "after dropping reversal rows with negative amounts". A quality check during the
+build showed this is wrong. The share of yellow rows with negative amounts jumps from 2.2% in
+December 2024 to 4.2% in January 2025 and about 7% by May 2025. Row-level inspection of December
+2024, February 2025 and May 2025 found that most new negative rows are Flex Fare rows
+(`payment_type` 0) from vendor 2 with no positive twin, and that their median distance and
+duration (2.47 miles, 16.7 minutes) match ordinary Flex trips (2.56 miles, 16.8 minutes). They
+are real trips with odd amount coding. A sign filter would have deleted them almost only after
+the toll began and created a false fall in yellow trips. The rule is now: a reversal is a pair of
+rows sharing vendor, pickup time, dropoff time and both zones, and one row of each pair is kept.
+Unpaired negative rows are kept. The check looked at row counts and citywide daily totals. No
+treated-versus-comparison outcome had been computed.
+
+**2. Added robustness checks for Flex Fare rows.** The same check showed Flex rows rising from
+about 5% of yellow records on 6 January 2025 to 15-20% within two weeks. This is a yellow-only
+shift that coincides with treatment and may be measurement or market change rather than a
+treatment response. Two specifications were added before estimation: yellow metered rows only,
+and all services without Flex rows. The primary specification is unchanged.
+
+**3. Post-hoc diagnostics, added after seeing the estimates.** The pre-specified primary estimate
+failed its fake-start placebo, so under the wording rule above the result is "sensitive". That
+verdict stands. The event study then showed a long pre-existing divergence, no visible break in
+January 2025, and a sharp unexplained step in January 2026. Everything in
+`src/cordon/diagnostics.py` and `results/post_hoc.json` was written after seeing this, to ask
+what the pre-specified analysis could not answer. It is labelled post-hoc wherever it appears
+and carries less evidential weight:
+
+- A linear pre-trend fitted to pre-period weeks only. The pre-specified "core linear pre-trend"
+  check fits one slope across pre and post weeks, which lets post-period movement leak into the
+  trend, so its +0.9% is not the clean version of this idea.
+- Year-on-year growth breaks at 13, 26 and 52 weeks either side of the start, and the same test
+  at the January 2024 and January 2026 anniversaries.
+- The distance gradient at a fake start, to see whether it predates the toll.
+- A comparison of core against the surcharge ring with the pre-only trend, and ring-only
+  comparisons by service.
+- An all-days approximation of the design in Pandey, Guler and Gayah (2026), run on the real
+  dates and a year earlier.
+
+The fee and surcharge amounts were checked in December 2025 and February 2026 to rule out a rule
+change behind the January 2026 step: they were unchanged. No rule change was found.

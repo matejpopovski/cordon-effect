@@ -1,5 +1,6 @@
 import numpy as np
 import pytest
+import statsmodels.api as sm
 
 from cordon import did, estimate
 
@@ -49,3 +50,27 @@ def test_placebo_blocks_run_on_far_clusters_only(panel_factory):
     out = estimate.placebo_blocks(p)
     assert len(out) == 6
     assert max(abs(row["beta"]) for row in out) < 0.1
+
+
+def test_ppml_matches_a_full_statsmodels_glm(panel_factory):
+    p = panel_factory(effect=-0.08, n_zones=24, n_treated=6, first_week=-60, last_week=39)
+    beta, se = estimate.fit_ppml(p, ["core"])
+
+    t, n = p.counts.shape
+    columns, names = did.post_terms(p, ["core"])
+    more, more_names = did.seasonal_terms(p, ["core"])
+    terms = np.stack(columns + more, axis=-1).reshape(t * n, len(columns) + len(more))
+    used = terms.std(axis=0) > 0
+    x = np.hstack(
+        [terms[:, used], np.tile(np.eye(n), (t, 1)), np.repeat(np.eye(t)[:, 1:], n, axis=0)]
+    )
+    groups = np.tile(np.unique(p.clusters, return_inverse=True)[1], t)
+    reference = sm.GLM(p.counts.ravel(), x, family=sm.families.Poisson()).fit(
+        cov_type="cluster", cov_kwds={"groups": groups}, tol=1e-10
+    )
+    index = [nm for nm, u in zip(names + more_names, used, strict=True) if u].index("core")
+    assert beta == pytest.approx(reference.params[index], abs=1e-7)
+    # statsmodels also scales by (N-1)/(N-K) counting the zone dummies. They are nested within
+    # clusters, so that term is left out here and is removed from the reference to compare.
+    nested_df = np.sqrt((x.shape[0] - 1) / (x.shape[0] - x.shape[1]))
+    assert se == pytest.approx(reference.bse[index] / nested_df, rel=0.01)

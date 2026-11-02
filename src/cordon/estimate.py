@@ -9,7 +9,6 @@ from datetime import date
 
 import numpy as np
 import polars as pl
-import statsmodels.api as sm
 
 from . import config, did, panel, synth
 from .wild import WildBootstrap, wild_test
@@ -112,23 +111,60 @@ def estimate(
     )
 
 
-def fit_ppml(p: did.Panel, exposed: list[str]) -> tuple[float, float]:
-    """Poisson with explicit dummies. Slower, but it is the check on the log-linear form."""
+def fit_ppml(
+    p: did.Panel, exposed: list[str], tol: float = 1e-10, iterations: int = 100
+) -> tuple[float, float]:
+    """Poisson with zone, week and seasonal terms, returning the core coefficient and its SE.
+
+    A dense GLM on this panel peaks above 5 GB. In a Poisson model the zone effects can be
+    concentrated out in closed form, which shrinks the design to weeks and terms and keeps the
+    run well under a gigabyte. A test checks the answer against statsmodels' GLM.
+    """
     t, n = p.counts.shape
     y = p.counts.ravel()
-    zone_dummies = np.tile(np.eye(n), (t, 1))
-    week_dummies = np.repeat(np.eye(t)[:, 1:], n, axis=0)
     columns, names = did.post_terms(p, exposed)
     more, more_names = did.seasonal_terms(p, exposed)
     terms = np.stack(columns + more, axis=-1).reshape(t * n, len(columns) + len(more))
     used = terms.std(axis=0) > 0
-    x = np.hstack([terms[:, used], zone_dummies, week_dummies])
-    groups = np.tile(np.unique(p.clusters, return_inverse=True)[1], t)
-    result = sm.GLM(y, x, family=sm.families.Poisson()).fit(
-        cov_type="cluster", cov_kwds={"groups": groups}, maxiter=50, tol=1e-9
-    )
-    index = [nm for nm, u in zip(names + more_names, used, strict=True) if u].index("core")
-    return float(result.params[index]), float(result.bse[index])
+    names = [nm for nm, u in zip(names + more_names, used, strict=True) if u]
+    weeks = np.repeat(np.eye(t)[:, 1:], n, axis=0)
+    design = np.hstack([terms[:, used], weeks])
+
+    zone = np.tile(np.arange(n), t)
+    totals = np.bincount(zone, weights=y, minlength=n)
+
+    def zone_demean(values: np.ndarray, mu: np.ndarray) -> np.ndarray:
+        weight = np.bincount(zone, weights=mu, minlength=n)
+        if values.ndim == 1:
+            return values - (np.bincount(zone, weights=mu * values, minlength=n) / weight)[zone]
+        means = np.zeros((n, values.shape[1]))
+        np.add.at(means, zone, values * mu[:, None])
+        return values - (means / weight[:, None])[zone]
+
+    theta = np.zeros(design.shape[1])
+    for _ in range(iterations):
+        eta = design @ theta
+        alpha = np.log(totals / np.bincount(zone, weights=np.exp(eta), minlength=n))
+        mu = np.exp(eta + alpha[zone])
+        x = zone_demean(design, mu)
+        step = np.linalg.solve(x.T @ (x * mu[:, None]), x.T @ (y - mu))
+        theta += step
+        if np.max(np.abs(step)) < tol:
+            break
+
+    eta = design @ theta
+    alpha = np.log(totals / np.bincount(zone, weights=np.exp(eta), minlength=n))
+    mu = np.exp(eta + alpha[zone])
+    x = zone_demean(design, mu)
+    bread = np.linalg.inv(x.T @ (x * mu[:, None]))
+    cluster_ids = np.tile(np.unique(p.clusters, return_inverse=True)[1], t)
+    groups = cluster_ids.max() + 1
+    scores = np.zeros((groups, x.shape[1]))
+    np.add.at(scores, cluster_ids, x * (y - mu)[:, None])
+    index = names.index("core")
+    row = bread[index]
+    variance = float(row @ (scores.T @ scores) @ row) * groups / (groups - 1)
+    return float(theta[index]), variance**0.5
 
 
 def robustness(frame: pl.DataFrame, zones: pl.DataFrame, primary: did.Panel, draws: int) -> list:
@@ -146,6 +182,11 @@ def robustness(frame: pl.DataFrame, zones: pl.DataFrame, primary: did.Panel, dra
     for service, title in (("hv", "Uber and Lyft"), ("yellow", "Yellow taxis")):
         p = did.load_panel(frame, zones, service=service)
         rows.append(estimate(title, "service", p, EXPOSED, draws))
+
+    metered = did.load_panel(frame, zones, service="yellow", exclude_flex=True)
+    rows.append(estimate("Yellow, metered rows only", "service", metered, EXPOSED, draws))
+    no_flex = did.load_panel(frame, zones, exclude_flex=True)
+    rows.append(estimate("All services, no Flex rows", "service", no_flex, EXPOSED, draws))
 
     for period, title in (("peak", "Peak-toll hours"), ("overnight", "Overnight hours")):
         p = did.load_panel(frame, zones, period=period)
@@ -559,6 +600,8 @@ def verdict(
 
 
 def estimate_stage(draws: int = config.WILD_DRAWS) -> None:
+    from . import diagnostics
+
     started = time.time()
     config.RESULTS.mkdir(exist_ok=True)
     frame = pl.read_parquet(config.AGGREGATES / "zone_week.parquet")
@@ -574,6 +617,7 @@ def estimate_stage(draws: int = config.WILD_DRAWS) -> None:
     synthetic = synthetic_results(frame, zones, primary)
     spill = spillovers(primary, zones, draws)
     flow = flow_summary(flows)
+    post_hoc = diagnostics.run(frame, flows, zones, primary, draws)
 
     head = rows[0]
     betas = np.array([b["beta"] for b in blocks])
@@ -589,10 +633,12 @@ def estimate_stage(draws: int = config.WILD_DRAWS) -> None:
     )
 
     sizes = {g: int((primary.groups == g).sum()) for g in sorted(set(primary.groups.tolist()))}
-    group_weeks = {
-        g: primary.counts[:, primary.groups == g].sum(axis=1).tolist()
-        for g in ("core", "mixed", "surcharge_ring", "near", "far")
-    }
+    long_weeks = np.arange(config.FIRST_WEEK, config.LAST_WEEK + 1)
+    group_weeks = {}
+    for service in ("all", "hv", "yellow"):
+        long = did.load_panel(frame, zones, service=service, first_week=config.FIRST_WEEK)
+        for g in ("core", "surcharge_ring", "near", "far"):
+            group_weeks[f"{service}_{g}"] = long.counts[:, long.groups == g].sum(axis=1).tolist()
     summary = {
         "primary": head,
         "verdict": outcome,
@@ -626,7 +672,8 @@ def estimate_stage(draws: int = config.WILD_DRAWS) -> None:
         "synthetic.json": synthetic,
         "spillovers.json": spill,
         "flows.json": flow,
-        "group_series.json": {"weeks": primary.weeks.tolist(), "trips": group_weeks},
+        "post_hoc.json": post_hoc,
+        "group_series.json": {"weeks": long_weeks.tolist(), "trips": group_weeks},
     }
     for name, payload in outputs.items():
         (config.RESULTS / name).write_text(json.dumps(payload, indent=1, default=float) + "\n")

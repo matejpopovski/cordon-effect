@@ -82,6 +82,7 @@ def load_panel(
     pre_end: int = -1,
     comparison_flows: tuple[str, ...] = ("outside",),
     min_pre_trips: float = config.MIN_PRE_WEEKLY_TRIPS,
+    exclude_flex: bool = False,
 ) -> Panel:
     """Build the unit-by-week matrix: core units count core_flows, comparison units count
     comparison_flows, and each mixed zone counts trips touching it but no core zone."""
@@ -90,6 +91,8 @@ def load_panel(
         table = table.filter(pl.col("service") == service)
     if period is not None:
         table = table.filter(pl.col("period") == period)
+    if exclude_flex:
+        table = table.with_columns(pl.col("trips") - pl.col("flex_trips"))
 
     units = zones.filter(pl.col("group").is_in(["core", "mixed", "surcharge_ring", "near", "far"]))
     flows_by_group = {

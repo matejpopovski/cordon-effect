@@ -21,6 +21,7 @@ def trips(pairs: list[tuple[int, int]]) -> pl.LazyFrame:
             "do": [p[1] for p in pairs],
             "trips": [1] * n,
             "charged": [1] * n,
+            "flex_trips": [0] * n,
         },
         schema_overrides={"pu": pl.Int16, "do": pl.Int16},
     )

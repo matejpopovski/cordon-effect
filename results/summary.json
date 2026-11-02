@@ -1,0 +1,56 @@
+{
+ "primary": {
+  "label": "Primary",
+  "family": "primary",
+  "beta": -0.14150572172623022,
+  "percent": -13.194979117496642,
+  "se": 0.006912972279865179,
+  "cr_low_pct": -14.36320502800067,
+  "cr_high_pct": -12.010816695374926,
+  "wild_low_pct": -14.448756629592385,
+  "wild_high_pct": -11.754497177373324,
+  "wild_p": 0.0,
+  "zones": 254,
+  "clusters": 52,
+  "weeks": 194
+ },
+ "verdict": {
+  "word": "sensitive",
+  "checks": {
+   "wild_interval_excludes_zero": true,
+   "randomisation_p_below_0_10": true,
+   "fake_start_smaller_than_estimate": true,
+   "fake_start_interval_includes_zero": false,
+   "synthetic_share_sign": true,
+   "sign_stable_across_comparisons": true
+  }
+ },
+ "randomisation": {
+  "p": 0.034482758620689655,
+  "blocks": 28,
+  "abs_quantile_95_pct": 5.1671406084888405,
+  "spread_pct": [
+   -4.307056718646884,
+   5.471015906708776
+  ]
+ },
+ "panel": {
+  "zones": {
+   "core": 37,
+   "far": 166,
+   "mixed": 7,
+   "near": 39,
+   "surcharge_ring": 5
+  },
+  "first_week": "2023-01-08",
+  "last_week": "2026-09-20",
+  "weeks": 194,
+  "pre_weeks": 104,
+  "post_weeks": 90,
+  "clusters": 52,
+  "core_clusters": 6
+ },
+ "draws": 9999,
+ "event_study_max_abs_pre_pct": 8.667584684761165,
+ "seconds": 57.9
+}

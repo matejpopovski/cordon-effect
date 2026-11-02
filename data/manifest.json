@@ -5,11 +5,12 @@
   "sha256": "535945d730abd37d9e5f11ce9a77d19a0cd0e2a91b8f950c233eb4cc75d39761",
   "last_modified": "Thu, 30 Jun 2022 03:16:23 GMT",
   "raw_rows": 14751591,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 19027,
-  "bad_distance": 2281,
-  "kept": 14730283,
-  "flex_rows": 0
+  "bad_distance": 2714,
+  "kept": 14748877,
+  "flex_rows": 0,
+  "negative_kept": 18594
  },
  "hv_2022-02": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-02.parquet",
@@ -17,11 +18,12 @@
   "sha256": "95ff2d3826128f28fa57a48677d1178ab156e185d98aabb88a27dc146ed35833",
   "last_modified": "Thu, 30 Jun 2022 03:16:23 GMT",
   "raw_rows": 16019283,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 18264,
-  "bad_distance": 2644,
-  "kept": 15998375,
-  "flex_rows": 0
+  "bad_distance": 3117,
+  "kept": 16016166,
+  "flex_rows": 0,
+  "negative_kept": 17791
  },
  "hv_2022-03": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-03.parquet",
@@ -29,11 +31,12 @@
   "sha256": "e2552b5a9876dd5d0d325a858f5dda95c5f37f34f1bc88b34e4aa59a79c034fe",
   "last_modified": "Thu, 30 Jun 2022 03:16:23 GMT",
   "raw_rows": 18453548,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 19395,
-  "bad_distance": 2809,
-  "kept": 18431344,
-  "flex_rows": 0
+  "bad_distance": 3303,
+  "kept": 18450245,
+  "flex_rows": 0,
+  "negative_kept": 18901
  },
  "hv_2022-04": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-04.parquet",
@@ -41,11 +44,12 @@
   "sha256": "da809cc7330e93adfaf8f8c7100156c6719ff22af3d2afcbdcfba4fd2a541ee3",
   "last_modified": "Tue, 30 Aug 2022 16:01:40 GMT",
   "raw_rows": 17752561,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 19223,
-  "bad_distance": 2841,
-  "kept": 17730497,
-  "flex_rows": 0
+  "bad_distance": 3370,
+  "kept": 17749191,
+  "flex_rows": 0,
+  "negative_kept": 18694
  },
  "hv_2022-05": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-05.parquet",
@@ -53,11 +57,12 @@
   "sha256": "c0d226af87f77ce7d00f8239ef48731435240aaaff24d3c5cb2a0fec2abb2c0d",
   "last_modified": "Tue, 30 Aug 2022 16:01:40 GMT",
   "raw_rows": 18157335,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 20116,
-  "bad_distance": 4428,
-  "kept": 18132791,
-  "flex_rows": 0
+  "bad_distance": 5156,
+  "kept": 18152179,
+  "flex_rows": 0,
+  "negative_kept": 19388
  },
  "hv_2022-06": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-06.parquet",
@@ -65,11 +70,12 @@
   "sha256": "26b66206345a899d4ba71c144d14c7d6c11c6d113d22b0fd9b460d058cc37039",
   "last_modified": "Tue, 30 Aug 2022 16:01:40 GMT",
   "raw_rows": 17780075,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 19713,
-  "bad_distance": 3263,
-  "kept": 17757099,
-  "flex_rows": 0
+  "bad_distance": 3943,
+  "kept": 17776132,
+  "flex_rows": 0,
+  "negative_kept": 19033
  },
  "hv_2022-07": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-07.parquet",
@@ -77,11 +83,12 @@
   "sha256": "529a76eba1b4a49198f474a6aacf823b8cc3d9b471cc0750461877a2a9107148",
   "last_modified": "Mon, 14 Nov 2022 13:55:37 GMT",
   "raw_rows": 17464619,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 17328,
-  "bad_distance": 2605,
-  "kept": 17444686,
-  "flex_rows": 0
+  "bad_distance": 3166,
+  "kept": 17461453,
+  "flex_rows": 0,
+  "negative_kept": 16767
  },
  "hv_2022-08": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-08.parquet",
@@ -89,11 +96,12 @@
   "sha256": "0f2ba11763db8b173a732737c0ebc8b3784ad1b6230ac92b936bef6198532e35",
   "last_modified": "Mon, 14 Nov 2022 13:55:37 GMT",
   "raw_rows": 17185687,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 20436,
-  "bad_distance": 2635,
-  "kept": 17162616,
-  "flex_rows": 0
+  "bad_distance": 3082,
+  "kept": 17182605,
+  "flex_rows": 0,
+  "negative_kept": 19989
  },
  "hv_2022-09": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-09.parquet",
@@ -101,11 +109,12 @@
   "sha256": "c92bb92de4cb78350e0dea4eb2157ddccca6fda44cd1504e61e47d0cc0764433",
   "last_modified": "Wed, 30 Nov 2022 20:24:30 GMT",
   "raw_rows": 17793551,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 21031,
-  "bad_distance": 2917,
-  "kept": 17769603,
-  "flex_rows": 0
+  "bad_distance": 3385,
+  "kept": 17790166,
+  "flex_rows": 0,
+  "negative_kept": 20563
  },
  "hv_2022-10": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-10.parquet",
@@ -113,11 +122,12 @@
   "sha256": "d52e73de31b807dd15aaeb688494e520720e987426a9f90f3bdbcb5a4d4be717",
   "last_modified": "Mon, 19 Dec 2022 21:59:12 GMT",
   "raw_rows": 19306090,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 24208,
-  "bad_distance": 3583,
-  "kept": 19278299,
-  "flex_rows": 0
+  "bad_distance": 4204,
+  "kept": 19301886,
+  "flex_rows": 0,
+  "negative_kept": 23587
  },
  "hv_2022-11": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-11.parquet",
@@ -125,11 +135,12 @@
   "sha256": "b2f572f97c5eed7f2c2f129ec097d4211ce11441ecf7122611320241ea1ae1ea",
   "last_modified": "Wed, 25 Jan 2023 16:46:43 GMT",
   "raw_rows": 18085896,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 17751,
-  "bad_distance": 3375,
-  "kept": 18064770,
-  "flex_rows": 0
+  "bad_distance": 3900,
+  "kept": 18081996,
+  "flex_rows": 0,
+  "negative_kept": 17226
  },
  "hv_2022-12": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2022-12.parquet",
@@ -137,11 +148,12 @@
   "sha256": "09c09c54e844db8efdefbd6d5a5c5a3f71ab43b9128edec0535fda6098c22398",
   "last_modified": "Mon, 20 Mar 2023 20:46:51 GMT",
   "raw_rows": 19665847,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 17116,
-  "bad_distance": 3684,
-  "kept": 19645047,
-  "flex_rows": 0
+  "bad_distance": 4105,
+  "kept": 19661742,
+  "flex_rows": 0,
+  "negative_kept": 16695
  },
  "hv_2023-01": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-01.parquet",
@@ -149,11 +161,12 @@
   "sha256": "cb066a3fe0770e44dde67cfc43e8b964b7b3ca7f2c90dc35d2d57cb7e41629b8",
   "last_modified": "Mon, 20 Mar 2023 20:46:51 GMT",
   "raw_rows": 18479031,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 13440,
-  "bad_distance": 3403,
-  "kept": 18462188,
-  "flex_rows": 0
+  "bad_distance": 3741,
+  "kept": 18475290,
+  "flex_rows": 0,
+  "negative_kept": 13102
  },
  "hv_2023-02": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-02.parquet",
@@ -161,11 +174,12 @@
   "sha256": "5a9f32bda414abcb0f04f2286ca8af5670ac9e535fdd86f2aa3840b71d62fdc2",
   "last_modified": "Mon, 01 May 2023 15:32:56 GMT",
   "raw_rows": 17960971,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 13547,
-  "bad_distance": 2758,
-  "kept": 17944666,
-  "flex_rows": 0
+  "bad_distance": 2961,
+  "kept": 17958010,
+  "flex_rows": 0,
+  "negative_kept": 13344
  },
  "hv_2023-03": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-03.parquet",
@@ -173,11 +187,12 @@
   "sha256": "57e607736d4460050e823acb1af82f9a23ed36382b131217fa56597f4f7c0f5a",
   "last_modified": "Fri, 19 May 2023 16:09:46 GMT",
   "raw_rows": 20413539,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 13686,
-  "bad_distance": 3338,
-  "kept": 20396515,
-  "flex_rows": 0
+  "bad_distance": 3555,
+  "kept": 20409984,
+  "flex_rows": 0,
+  "negative_kept": 13469
  },
  "hv_2023-04": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-04.parquet",
@@ -185,11 +200,12 @@
   "sha256": "edf8bfe4435fec30bc8830750834c570f597fc129e6a9b7779366280f4bed276",
   "last_modified": "Fri, 23 Jun 2023 14:05:21 GMT",
   "raw_rows": 19144903,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 11800,
-  "bad_distance": 3182,
-  "kept": 19129921,
-  "flex_rows": 0
+  "bad_distance": 3442,
+  "kept": 19141461,
+  "flex_rows": 0,
+  "negative_kept": 11540
  },
  "hv_2023-05": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-05.parquet",
@@ -197,11 +213,12 @@
   "sha256": "af892a2dd4262a9197a6ba84ed53ce8b27e0746106b67e8fe8f0b4ca7eabd2f3",
   "last_modified": "Wed, 26 Jul 2023 14:48:04 GMT",
   "raw_rows": 19847676,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 6340,
-  "bad_distance": 3191,
-  "kept": 19838145,
-  "flex_rows": 0
+  "bad_distance": 3378,
+  "kept": 19844298,
+  "flex_rows": 0,
+  "negative_kept": 6153
  },
  "hv_2023-06": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-06.parquet",
@@ -209,11 +226,12 @@
   "sha256": "cb78866e5a685db8733e2be8210d3f9498cef7e2aaa01086e88b363dfa825855",
   "last_modified": "Tue, 22 Aug 2023 13:23:37 GMT",
   "raw_rows": 19366619,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 5949,
-  "bad_distance": 2961,
-  "kept": 19357709,
-  "flex_rows": 0
+  "bad_distance": 3088,
+  "kept": 19363531,
+  "flex_rows": 0,
+  "negative_kept": 5822
  },
  "hv_2023-07": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-07.parquet",
@@ -221,11 +239,12 @@
   "sha256": "76a5e0b404a4ec0c2e70b2cf3f482fe64b117dc83602dcc4b31036e099347e55",
   "last_modified": "Thu, 21 Sep 2023 22:40:27 GMT",
   "raw_rows": 19132131,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 396,
   "bad_distance": 3193,
-  "kept": 19128542,
-  "flex_rows": 0
+  "kept": 19128938,
+  "flex_rows": 0,
+  "negative_kept": 396
  },
  "hv_2023-08": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-08.parquet",
@@ -233,11 +252,12 @@
   "sha256": "1f657d06e9465217005104c594578100ab1b5c846f353efd87372f991709d6fd",
   "last_modified": "Thu, 02 Nov 2023 13:56:54 GMT",
   "raw_rows": 18322150,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 2011,
-  "bad_distance": 2939,
-  "kept": 18317200,
-  "flex_rows": 0
+  "bad_distance": 2940,
+  "kept": 18319210,
+  "flex_rows": 0,
+  "negative_kept": 2010
  },
  "hv_2023-09": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-09.parquet",
@@ -245,11 +265,12 @@
   "sha256": "3f3fb7b6f62bf1a7ed07bfd1af7a23be0f798d101f27b77331e9a52b4d4a10f4",
   "last_modified": "Fri, 17 Nov 2023 14:55:56 GMT",
   "raw_rows": 19851123,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 632,
   "bad_distance": 4325,
-  "kept": 19846166,
-  "flex_rows": 0
+  "kept": 19846798,
+  "flex_rows": 0,
+  "negative_kept": 632
  },
  "hv_2023-10": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-10.parquet",
@@ -257,11 +278,12 @@
   "sha256": "fd577706331f37f6470945af6c268b27af036cf51eaa5689bc84481a1e0579f0",
   "last_modified": "Mon, 18 Dec 2023 14:32:59 GMT",
   "raw_rows": 20186330,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 205,
   "bad_distance": 3290,
-  "kept": 20182835,
-  "flex_rows": 0
+  "kept": 20183040,
+  "flex_rows": 0,
+  "negative_kept": 205
  },
  "hv_2023-11": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-11.parquet",
@@ -269,11 +291,12 @@
   "sha256": "a48486cfb760c0839a8f7b507f3b89d5ac5fc5433c67233dcb6a89c91ea08e1c",
   "last_modified": "Thu, 18 Jan 2024 15:04:46 GMT",
   "raw_rows": 19269250,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 180,
   "bad_distance": 3247,
-  "kept": 19265823,
-  "flex_rows": 0
+  "kept": 19266003,
+  "flex_rows": 0,
+  "negative_kept": 180
  },
  "hv_2023-12": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2023-12.parquet",
@@ -281,11 +304,12 @@
   "sha256": "ff23e07001de2ec2d2e44f82d748c3a2ec88efdc5df7532248248cca59cc0dd9",
   "last_modified": "Thu, 22 Feb 2024 14:55:08 GMT",
   "raw_rows": 20516297,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 346,
   "bad_distance": 3619,
-  "kept": 20512332,
-  "flex_rows": 0
+  "kept": 20512678,
+  "flex_rows": 0,
+  "negative_kept": 346
  },
  "hv_2024-01": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-01.parquet",
@@ -293,11 +317,12 @@
   "sha256": "9897de352aa52cea36b70348cc6721b8d4494327ce39c85f0dba83d86ecaa098",
   "last_modified": "Thu, 21 Mar 2024 15:35:44 GMT",
   "raw_rows": 19663930,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 191,
   "bad_distance": 3286,
-  "kept": 19660453,
-  "flex_rows": 0
+  "kept": 19660644,
+  "flex_rows": 0,
+  "negative_kept": 191
  },
  "hv_2024-02": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-02.parquet",
@@ -305,11 +330,12 @@
   "sha256": "54bafa7bcf3f06e7833fcbccf7ef158eb793a72ee1c4bb8bf080e56ae71a15d6",
   "last_modified": "Fri, 19 Apr 2024 18:22:42 GMT",
   "raw_rows": 19359148,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 8512,
   "bad_distance": 3082,
-  "kept": 19347554,
-  "flex_rows": 0
+  "kept": 19356066,
+  "flex_rows": 0,
+  "negative_kept": 8512
  },
  "hv_2024-03": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-03.parquet",
@@ -317,11 +343,12 @@
   "sha256": "ff25b93f890f889637963b749d0839ec5a15f075d23ea5297b3312ed9a10d6d9",
   "last_modified": "Wed, 22 May 2024 19:27:43 GMT",
   "raw_rows": 21280788,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 1080,
   "bad_distance": 2954,
-  "kept": 21276754,
-  "flex_rows": 0
+  "kept": 21277834,
+  "flex_rows": 0,
+  "negative_kept": 1080
  },
  "hv_2024-04": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-04.parquet",
@@ -329,11 +356,12 @@
   "sha256": "1493f3edd0486bf6c3f949cb5a66ec49e9d04f7ad6e94f85626f16aa6fec7260",
   "last_modified": "Thu, 20 Jun 2024 20:30:13 GMT",
   "raw_rows": 19733038,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 673,
-  "bad_distance": 2507,
-  "kept": 19729858,
-  "flex_rows": 0
+  "bad_distance": 2508,
+  "kept": 19730530,
+  "flex_rows": 0,
+  "negative_kept": 672
  },
  "hv_2024-05": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-05.parquet",
@@ -341,11 +369,12 @@
   "sha256": "152db11cbc95a796fea0b9cb26184b3c4cfad181fa9d7488d4c61f06c521b4b5",
   "last_modified": "Thu, 18 Jul 2024 18:35:19 GMT",
   "raw_rows": 20704538,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 266,
   "bad_distance": 2510,
-  "kept": 20701762,
-  "flex_rows": 0
+  "kept": 20702028,
+  "flex_rows": 0,
+  "negative_kept": 266
  },
  "hv_2024-06": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-06.parquet",
@@ -353,11 +382,12 @@
   "sha256": "4772ee1ab01e639a5db74169b49049f74f0f46a0c925fd3b67f9f068221f6373",
   "last_modified": "Tue, 20 Aug 2024 14:01:56 GMT",
   "raw_rows": 20123226,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 199,
   "bad_distance": 2655,
-  "kept": 20120372,
-  "flex_rows": 0
+  "kept": 20120571,
+  "flex_rows": 0,
+  "negative_kept": 199
  },
  "hv_2024-07": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-07.parquet",
@@ -365,11 +395,12 @@
   "sha256": "3a511a8df72441d72b32f6ce9829e29f5d61666e37f1b40b8d352cc5830c81e1",
   "last_modified": "Wed, 18 Sep 2024 13:53:34 GMT",
   "raw_rows": 19182934,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 437,
   "bad_distance": 2479,
-  "kept": 19180018,
-  "flex_rows": 0
+  "kept": 19180455,
+  "flex_rows": 0,
+  "negative_kept": 437
  },
  "hv_2024-08": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-08.parquet",
@@ -377,11 +408,12 @@
   "sha256": "99fd2913d2c8935e4c1d166f229290a90971b6564c490a8ba2a257de9e08fae2",
   "last_modified": "Wed, 23 Oct 2024 18:45:26 GMT",
   "raw_rows": 19128392,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 334,
-  "bad_distance": 2593,
-  "kept": 19125465,
-  "flex_rows": 0
+  "bad_distance": 2594,
+  "kept": 19125798,
+  "flex_rows": 0,
+  "negative_kept": 333
  },
  "hv_2024-09": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-09.parquet",
@@ -389,11 +421,12 @@
   "sha256": "d2d26d608a775555128a2b435d375f5d25d3d8125b688c57fc60d5a0fb5a1d3b",
   "last_modified": "Wed, 20 Nov 2024 21:37:39 GMT",
   "raw_rows": 19209788,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 477,
-  "bad_distance": 2990,
-  "kept": 19206321,
-  "flex_rows": 0
+  "bad_distance": 2991,
+  "kept": 19206797,
+  "flex_rows": 0,
+  "negative_kept": 476
  },
  "hv_2024-10": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-10.parquet",
@@ -401,11 +434,12 @@
   "sha256": "8ee625798a6543148c3a3e33df5e2cf44acb17af904dbfff925d1cd4f077afb5",
   "last_modified": "Wed, 18 Dec 2024 21:21:21 GMT",
   "raw_rows": 20028282,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 1797,
-  "bad_distance": 2911,
-  "kept": 20023574,
-  "flex_rows": 0
+  "bad_distance": 2913,
+  "kept": 20025369,
+  "flex_rows": 0,
+  "negative_kept": 1795
  },
  "hv_2024-11": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-11.parquet",
@@ -413,11 +447,12 @@
   "sha256": "cc3547280a9ff6edb4eaa467a3aa0ea2a372fca746e3e733d1ea3152d56daed3",
   "last_modified": "Fri, 17 Jan 2025 20:03:41 GMT",
   "raw_rows": 19987533,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 2257,
-  "bad_distance": 2867,
-  "kept": 19982409,
-  "flex_rows": 0
+  "bad_distance": 2869,
+  "kept": 19984664,
+  "flex_rows": 0,
+  "negative_kept": 2255
  },
  "hv_2024-12": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-12.parquet",
@@ -425,11 +460,12 @@
   "sha256": "dcf0885722bc76ab7b5f22a23b784513caf7e7c2b23381ed854610c436c48887",
   "last_modified": "Fri, 21 Feb 2025 21:29:11 GMT",
   "raw_rows": 21068851,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 2010,
-  "bad_distance": 3217,
-  "kept": 21063624,
-  "flex_rows": 0
+  "bad_distance": 3218,
+  "kept": 21065633,
+  "flex_rows": 0,
+  "negative_kept": 2009
  },
  "hv_2025-01": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-01.parquet",
@@ -437,11 +473,272 @@
   "sha256": "fcdef276f4e9887f2beab30590165cdea74caef50a1313d71fa01ff6afacca3a",
   "last_modified": "Wed, 23 Apr 2025 16:30:36 GMT",
   "raw_rows": 20405666,
+  "reversal_twins": 0,
   "out_of_month": 0,
-  "bad_amount": 2427,
   "bad_distance": 2606,
-  "kept": 20400633,
-  "flex_rows": 0
+  "kept": 20403060,
+  "flex_rows": 0,
+  "negative_kept": 2427
+ },
+ "hv_2025-02": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-02.parquet",
+  "bytes": 461632254,
+  "sha256": "2077477d4d841b8ec40a3839b629f08f45f6802ca016adc1e01d6d8cffd2cf23",
+  "last_modified": "Wed, 23 Apr 2025 16:15:47 GMT",
+  "raw_rows": 19339461,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2469,
+  "kept": 19336992,
+  "flex_rows": 0,
+  "negative_kept": 516
+ },
+ "hv_2025-03": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-03.parquet",
+  "bytes": 501783767,
+  "sha256": "671399467732b00653307525421bfc6004e6a45be1fadd5e4b8fa3d11da22043",
+  "last_modified": "Wed, 21 May 2025 15:28:05 GMT",
+  "raw_rows": 20536879,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2185,
+  "kept": 20534694,
+  "flex_rows": 0,
+  "negative_kept": 381
+ },
+ "hv_2025-04": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-04.parquet",
+  "bytes": 487219586,
+  "sha256": "d1edcd63ba37e87e0c6fda58cfc12352c0aa9ad9ad88dd2992094bc1ecd1e3b1",
+  "last_modified": "Wed, 25 Jun 2025 14:51:04 GMT",
+  "raw_rows": 19753983,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2327,
+  "kept": 19751656,
+  "flex_rows": 0,
+  "negative_kept": 343
+ },
+ "hv_2025-05": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-05.parquet",
+  "bytes": 517386544,
+  "sha256": "424be0dcc1248fd83dbf235805f2d475e19196ad64dc2e1d2e9c7b771851585a",
+  "last_modified": "Wed, 25 Jun 2025 15:51:27 GMT",
+  "raw_rows": 21091193,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2785,
+  "kept": 21088408,
+  "flex_rows": 0,
+  "negative_kept": 320
+ },
+ "hv_2025-06": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-06.parquet",
+  "bytes": 490819474,
+  "sha256": "f26bbe980f037a15f47f40da4ad7102b7aaebe0c9a8f3c1f6d058c6652007c88",
+  "last_modified": "Fri, 25 Jul 2025 14:01:33 GMT",
+  "raw_rows": 19868009,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2500,
+  "kept": 19865509,
+  "flex_rows": 0,
+  "negative_kept": 475
+ },
+ "hv_2025-07": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-07.parquet",
+  "bytes": 487222980,
+  "sha256": "cae4e3d120f9af1a7369dad915dfe9beadda914b08a38ee8c045a4d09f085712",
+  "last_modified": "Thu, 21 Aug 2025 16:21:54 GMT",
+  "raw_rows": 19653012,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2155,
+  "kept": 19650857,
+  "flex_rows": 0,
+  "negative_kept": 451
+ },
+ "hv_2025-08": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-08.parquet",
+  "bytes": 479574607,
+  "sha256": "e2efc965d31bd10f23224f5e007b463d037c45fbdaa6ded23c5deab01ec8d3b7",
+  "last_modified": "Wed, 24 Sep 2025 14:17:30 GMT",
+  "raw_rows": 19271461,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2220,
+  "kept": 19269241,
+  "flex_rows": 0,
+  "negative_kept": 725
+ },
+ "hv_2025-09": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-09.parquet",
+  "bytes": 480851341,
+  "sha256": "1744115e019e2f6e1e41214afb33f087a303620834c42021c642c5afca042d6f",
+  "last_modified": "Thu, 23 Oct 2025 15:54:44 GMT",
+  "raw_rows": 19434641,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2177,
+  "kept": 19432464,
+  "flex_rows": 0,
+  "negative_kept": 1006
+ },
+ "hv_2025-10": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-10.parquet",
+  "bytes": 518486063,
+  "sha256": "5610c7bcbe2aadd14761858eb7b94d3b01a2ee03d299c05f3575f72357f5b81a",
+  "last_modified": "Tue, 25 Nov 2025 15:26:03 GMT",
+  "raw_rows": 21308701,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2263,
+  "kept": 21306438,
+  "flex_rows": 0,
+  "negative_kept": 1568
+ },
+ "hv_2025-11": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-11.parquet",
+  "bytes": 507485661,
+  "sha256": "a17ebafe3b6b1927f9b1b4cfc9062a328867b79a871ce762bfb16a841024f1e0",
+  "last_modified": "Fri, 19 Dec 2025 15:50:06 GMT",
+  "raw_rows": 20818240,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2084,
+  "kept": 20816156,
+  "flex_rows": 0,
+  "negative_kept": 1809
+ },
+ "hv_2025-12": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-12.parquet",
+  "bytes": 535754793,
+  "sha256": "897e541b2a998df118dc5cc2b4182b74d14f6d0f2a950ef2bac3a8924ce6e95f",
+  "last_modified": "Tue, 24 Feb 2026 16:30:37 GMT",
+  "raw_rows": 22108438,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2357,
+  "kept": 22106081,
+  "flex_rows": 0,
+  "negative_kept": 2912
+ },
+ "hv_2026-01": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-01.parquet",
+  "bytes": 505868728,
+  "sha256": "d7cdc852912fd7864166448a93cb40d7d6b09f136057b10ae31e9bb53d59c6f2",
+  "last_modified": "Tue, 24 Feb 2026 17:46:21 GMT",
+  "raw_rows": 20940373,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2782,
+  "kept": 20937591,
+  "flex_rows": 0,
+  "negative_kept": 29875
+ },
+ "hv_2026-02": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-02.parquet",
+  "bytes": 476780037,
+  "sha256": "7f3c6737ed9a65884c9867ac2b8e05e358e56b42ecaf6d43f8009d40a9fce5c2",
+  "last_modified": "Wed, 25 Mar 2026 15:46:41 GMT",
+  "raw_rows": 19875686,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2020,
+  "kept": 19873666,
+  "flex_rows": 0,
+  "negative_kept": 4033
+ },
+ "hv_2026-03": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-03.parquet",
+  "bytes": 532615621,
+  "sha256": "0f63d67cb9253b5a818cc4a1b2ddaf3a79955a6bf31c7577c53ff97fa040a262",
+  "last_modified": "Tue, 28 Apr 2026 18:50:11 GMT",
+  "raw_rows": 22058358,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2557,
+  "kept": 22055801,
+  "flex_rows": 0,
+  "negative_kept": 5607
+ },
+ "hv_2026-04": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-04.parquet",
+  "bytes": 509865567,
+  "sha256": "15525aea9f82d55b885c6053414054e63f4c9abb3cdc44d78120a77d3aecc92b",
+  "last_modified": "Thu, 21 May 2026 14:34:30 GMT",
+  "raw_rows": 20995953,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 1857,
+  "kept": 20994096,
+  "flex_rows": 0,
+  "negative_kept": 5283
+ },
+ "hv_2026-05": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-05.parquet",
+  "bytes": 537576484,
+  "sha256": "e2b633a5be2280da537b4138f5bcb198eb04a6d3c2ef6bf7bd647f5b2c995287",
+  "last_modified": "Fri, 26 Jun 2026 21:07:20 GMT",
+  "raw_rows": 22125744,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2285,
+  "kept": 22123459,
+  "flex_rows": 0,
+  "negative_kept": 7630
+ },
+ "hv_2026-06": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-06.parquet",
+  "bytes": 506800012,
+  "sha256": "300f8dccfae9025383deeec3c1daecf6c16653615dbdcfec8d77a76804314f48",
+  "last_modified": "Thu, 17 Sep 2026 14:43:53 GMT",
+  "raw_rows": 20775868,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 4844,
+  "kept": 20771024,
+  "flex_rows": 0,
+  "negative_kept": 6638
+ },
+ "hv_2026-07": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-07.parquet",
+  "bytes": 511176663,
+  "sha256": "8da280d9d23813aae02a6e1d1d1caa8b96eb5e8d38efcbc9a570faf1e418f5a8",
+  "last_modified": "Thu, 17 Sep 2026 14:43:53 GMT",
+  "raw_rows": 20921249,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 1987,
+  "kept": 20919262,
+  "flex_rows": 0,
+  "negative_kept": 4239
+ },
+ "hv_2026-08": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-08.parquet",
+  "bytes": 502392134,
+  "sha256": "0015770b14420035b9c7708091b765eb59d70f25cd7d663d2462194208a198f6",
+  "last_modified": "Thu, 01 Oct 2026 13:38:15 GMT",
+  "raw_rows": 20493480,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2266,
+  "kept": 20491214,
+  "flex_rows": 0,
+  "negative_kept": 1061
+ },
+ "hv_2026-09": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-09.parquet",
+  "bytes": 509720685,
+  "sha256": "b146f2cff09b004395b0fb22cea74e2e2ea7932982969949d859a6d6d9064376",
+  "last_modified": "Thu, 29 Oct 2026 13:56:04 GMT",
+  "raw_rows": 20987681,
+  "reversal_twins": 0,
+  "out_of_month": 0,
+  "bad_distance": 2793,
+  "kept": 20984888,
+  "flex_rows": 0,
+  "negative_kept": 2470
  },
  "yellow_2022-01": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-01.parquet",
@@ -449,11 +746,12 @@
   "sha256": "797d6f008e67c3e3371b7f957ab97dbc2b38a9fb0ac083cb5eae4b0297b32372",
   "last_modified": "Thu, 30 Jun 2022 03:16:20 GMT",
   "raw_rows": 2463931,
+  "reversal_twins": 11369,
   "out_of_month": 52,
-  "bad_amount": 12937,
-  "bad_distance": 27739,
-  "kept": 2423203,
-  "flex_rows": 69978
+  "bad_distance": 27879,
+  "kept": 2424631,
+  "flex_rows": 70017,
+  "negative_kept": 11122
  },
  "yellow_2022-02": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-02.parquet",
@@ -461,11 +759,12 @@
   "sha256": "9905ead83ac16ae4a2915cb44ab1edb9c53eb3ac5a77a71f2a2e3ba18d59efb4",
   "last_modified": "Thu, 30 Jun 2022 03:16:20 GMT",
   "raw_rows": 2979431,
+  "reversal_twins": 13785,
   "out_of_month": 64,
-  "bad_amount": 15630,
-  "bad_distance": 30454,
-  "kept": 2933283,
-  "flex_rows": 99857
+  "bad_distance": 30624,
+  "kept": 2934958,
+  "flex_rows": 99910,
+  "negative_kept": 13344
  },
  "yellow_2022-03": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-03.parquet",
@@ -473,11 +772,12 @@
   "sha256": "b8b63566178c65da758cc292338ebc308534eb57607085fc67b2c939ae6035e3",
   "last_modified": "Thu, 30 Jun 2022 03:16:20 GMT",
   "raw_rows": 3627882,
-  "out_of_month": 89,
-  "bad_amount": 20027,
-  "bad_distance": 38734,
-  "kept": 3569032,
-  "flex_rows": 115202
+  "reversal_twins": 17505,
+  "out_of_month": 88,
+  "bad_distance": 38955,
+  "kept": 3571334,
+  "flex_rows": 115270,
+  "negative_kept": 17192
  },
  "yellow_2022-04": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-04.parquet",
@@ -485,11 +785,12 @@
   "sha256": "8c4162f28244098bd40f150f5f639cc1f41673e0f0df47e6399d7d374c224049",
   "last_modified": "Tue, 30 Aug 2022 16:01:40 GMT",
   "raw_rows": 3599920,
-  "out_of_month": 158,
-  "bad_amount": 19463,
-  "bad_distance": 38207,
-  "kept": 3542092,
-  "flex_rows": 116988
+  "reversal_twins": 17145,
+  "out_of_month": 157,
+  "bad_distance": 38419,
+  "kept": 3544199,
+  "flex_rows": 117024,
+  "negative_kept": 16694
  },
  "yellow_2022-05": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-05.parquet",
@@ -497,11 +798,12 @@
   "sha256": "6946b56ee057b72dced2204e0c10f2be2e1b7358c5b2c2943f88d2310089c43c",
   "last_modified": "Tue, 30 Aug 2022 16:01:40 GMT",
   "raw_rows": 3588295,
+  "reversal_twins": 18300,
   "out_of_month": 143,
-  "bad_amount": 20710,
-  "bad_distance": 43380,
-  "kept": 3524062,
-  "flex_rows": 127491
+  "bad_distance": 43636,
+  "kept": 3526216,
+  "flex_rows": 127521,
+  "negative_kept": 17461
  },
  "yellow_2022-06": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-06.parquet",
@@ -509,11 +811,12 @@
   "sha256": "a08f27ea544a500a6e10637605e5906e246e2836435ba1c05a3a3521faf42389",
   "last_modified": "Tue, 30 Aug 2022 16:01:40 GMT",
   "raw_rows": 3558124,
-  "out_of_month": 512,
-  "bad_amount": 22698,
-  "bad_distance": 48512,
-  "kept": 3486402,
-  "flex_rows": 128583
+  "reversal_twins": 20182,
+  "out_of_month": 498,
+  "bad_distance": 48792,
+  "kept": 3488652,
+  "flex_rows": 128612,
+  "negative_kept": 18515
  },
  "yellow_2022-07": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-07.parquet",
@@ -521,11 +824,12 @@
   "sha256": "5aa3c2a9deb55f09527e76e6f94a8185a4a04cd6361c8082ff6d6e64ab817d5b",
   "last_modified": "Mon, 14 Nov 2022 13:55:37 GMT",
   "raw_rows": 3174394,
+  "reversal_twins": 18906,
   "out_of_month": 82,
-  "bad_amount": 21557,
-  "bad_distance": 42608,
-  "kept": 3110147,
-  "flex_rows": 100809
+  "bad_distance": 42862,
+  "kept": 3112544,
+  "flex_rows": 100870,
+  "negative_kept": 18253
  },
  "yellow_2022-08": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-08.parquet",
@@ -533,11 +837,12 @@
   "sha256": "7c2d8f6ad71d3b0e432a77553224ea69f473d0b8bdff24a5b11d289ac5388536",
   "last_modified": "Mon, 14 Nov 2022 13:55:37 GMT",
   "raw_rows": 3152677,
+  "reversal_twins": 19714,
   "out_of_month": 53,
-  "bad_amount": 22633,
-  "bad_distance": 45812,
-  "kept": 3084179,
-  "flex_rows": 86615
+  "bad_distance": 46092,
+  "kept": 3086818,
+  "flex_rows": 86672,
+  "negative_kept": 19224
  },
  "yellow_2022-09": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-09.parquet",
@@ -545,11 +850,12 @@
   "sha256": "1ce6af91b4eb1583d3e710fec414c0aedddec96517b309506e7d12c3de72bb02",
   "last_modified": "Wed, 30 Nov 2022 20:24:30 GMT",
   "raw_rows": 3183767,
+  "reversal_twins": 18935,
   "out_of_month": 77,
-  "bad_amount": 21544,
-  "bad_distance": 48841,
-  "kept": 3113305,
-  "flex_rows": 110630
+  "bad_distance": 49130,
+  "kept": 3115625,
+  "flex_rows": 110688,
+  "negative_kept": 18089
  },
  "yellow_2022-10": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-10.parquet",
@@ -557,11 +863,12 @@
   "sha256": "3f3cab00e7d236735d3ab227e54ffe48fd28b0afbb30ae90d843d7a065a3ae69",
   "last_modified": "Mon, 19 Dec 2022 21:59:12 GMT",
   "raw_rows": 3675411,
+  "reversal_twins": 23027,
   "out_of_month": 91,
-  "bad_amount": 26257,
-  "bad_distance": 58334,
-  "kept": 3590729,
-  "flex_rows": 122218
+  "bad_distance": 58655,
+  "kept": 3593638,
+  "flex_rows": 122231,
+  "negative_kept": 22085
  },
  "yellow_2022-11": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-11.parquet",
@@ -569,11 +876,12 @@
   "sha256": "bf9fc6cd403320f2d00c2672fe1d4d58594c56ed7f64ab9bc7021d4c12bb543c",
   "last_modified": "Wed, 25 Jan 2023 16:46:43 GMT",
   "raw_rows": 3252717,
-  "out_of_month": 97,
-  "bad_amount": 24858,
-  "bad_distance": 56298,
-  "kept": 3171464,
-  "flex_rows": 105174
+  "reversal_twins": 21644,
+  "out_of_month": 96,
+  "bad_distance": 56604,
+  "kept": 3174373,
+  "flex_rows": 105250,
+  "negative_kept": 21444
  },
  "yellow_2022-12": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2022-12.parquet",
@@ -581,11 +889,12 @@
   "sha256": "4a9a69306bd36547b2eed3ecfa7365b53c2872f45b9647834dbd5166dee93708",
   "last_modified": "Mon, 20 Mar 2023 20:46:51 GMT",
   "raw_rows": 3399549,
+  "reversal_twins": 23917,
   "out_of_month": 46,
-  "bad_amount": 27430,
-  "bad_distance": 58915,
-  "kept": 3313158,
-  "flex_rows": 112967
+  "bad_distance": 59280,
+  "kept": 3316306,
+  "flex_rows": 113063,
+  "negative_kept": 23587
  },
  "yellow_2023-01": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-01.parquet",
@@ -593,11 +902,12 @@
   "sha256": "32df6f67578fa86c484a6b5ef23a5281992ff085521082340b0f9e5889e9a572",
   "last_modified": "Mon, 20 Mar 2023 20:46:51 GMT",
   "raw_rows": 3066766,
+  "reversal_twins": 21990,
   "out_of_month": 48,
-  "bad_amount": 25212,
-  "bad_distance": 42794,
-  "kept": 2998712,
-  "flex_rows": 64203
+  "bad_distance": 43070,
+  "kept": 3001658,
+  "flex_rows": 64248,
+  "negative_kept": 21984
  },
  "yellow_2023-02": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-02.parquet",
@@ -605,11 +915,12 @@
   "sha256": "4809e6aaac64f05a62d16a25d55713be1537ad64fc261e895eaf2d2120fe750a",
   "last_modified": "Mon, 01 May 2023 15:32:56 GMT",
   "raw_rows": 2913955,
+  "reversal_twins": 21825,
   "out_of_month": 55,
-  "bad_amount": 24905,
-  "bad_distance": 38038,
-  "kept": 2850957,
-  "flex_rows": 72005
+  "bad_distance": 38303,
+  "kept": 2853772,
+  "flex_rows": 72065,
+  "negative_kept": 21682
  },
  "yellow_2023-03": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-03.parquet",
@@ -617,11 +928,12 @@
   "sha256": "e7d44943111b007bf0e7084863511886e0db29f862f9a96239383a1f86c6c26e",
   "last_modified": "Fri, 19 May 2023 14:14:53 GMT",
   "raw_rows": 3403766,
-  "out_of_month": 189,
-  "bad_amount": 29834,
-  "bad_distance": 44747,
-  "kept": 3328996,
-  "flex_rows": 80927
+  "reversal_twins": 26306,
+  "out_of_month": 186,
+  "bad_distance": 45028,
+  "kept": 3332246,
+  "flex_rows": 81047,
+  "negative_kept": 25967
  },
  "yellow_2023-04": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-04.parquet",
@@ -629,11 +941,12 @@
   "sha256": "95c01c53c865e06489179bdecce3a59603697a1557c4d5d183c20ae13a144dc6",
   "last_modified": "Fri, 23 Jun 2023 14:05:21 GMT",
   "raw_rows": 3288250,
+  "reversal_twins": 26520,
   "out_of_month": 95,
-  "bad_amount": 30140,
-  "bad_distance": 36903,
-  "kept": 3221112,
-  "flex_rows": 87103
+  "bad_distance": 37140,
+  "kept": 3224495,
+  "flex_rows": 87486,
+  "negative_kept": 26632
  },
  "yellow_2023-05": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-05.parquet",
@@ -641,11 +954,12 @@
   "sha256": "9bd7d1c557bb9d0413619ba296b4828b884852a70bd07f2230b83f080d9a8591",
   "last_modified": "Wed, 26 Jul 2023 14:48:03 GMT",
   "raw_rows": 3513649,
+  "reversal_twins": 28481,
   "out_of_month": 50,
-  "bad_amount": 32289,
-  "bad_distance": 43153,
-  "kept": 3438157,
-  "flex_rows": 97750
+  "bad_distance": 43446,
+  "kept": 3441672,
+  "flex_rows": 98261,
+  "negative_kept": 28360
  },
  "yellow_2023-06": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-06.parquet",
@@ -653,11 +967,12 @@
   "sha256": "3e60e29b5df45683948b68acbfb503aa459d14162c610622585c6580fdbfc73a",
   "last_modified": "Tue, 22 Aug 2023 13:23:37 GMT",
   "raw_rows": 3307234,
+  "reversal_twins": 27729,
   "out_of_month": 41,
-  "bad_amount": 31591,
-  "bad_distance": 44004,
-  "kept": 3231598,
-  "flex_rows": 93448
+  "bad_distance": 44248,
+  "kept": 3235216,
+  "flex_rows": 94020,
+  "negative_kept": 27958
  },
  "yellow_2023-07": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-07.parquet",
@@ -665,11 +980,12 @@
   "sha256": "98504ae351d920e9e0b61241f5707f90ee1588cfb199c378459234b5035805ab",
   "last_modified": "Thu, 21 Sep 2023 22:40:27 GMT",
   "raw_rows": 2907108,
+  "reversal_twins": 27372,
   "out_of_month": 59,
-  "bad_amount": 31288,
-  "bad_distance": 46534,
-  "kept": 2829227,
-  "flex_rows": 73623
+  "bad_distance": 46787,
+  "kept": 2832890,
+  "flex_rows": 74119,
+  "negative_kept": 27876
  },
  "yellow_2023-08": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-08.parquet",
@@ -677,11 +993,12 @@
   "sha256": "84ce36a2f84fa14c12fd976c79a7d4f30c871f1782b08ca7c27bb76ab946e66b",
   "last_modified": "Thu, 02 Nov 2023 13:56:54 GMT",
   "raw_rows": 2824209,
+  "reversal_twins": 27310,
   "out_of_month": 34,
-  "bad_amount": 31426,
-  "bad_distance": 54434,
-  "kept": 2738315,
-  "flex_rows": 68825
+  "bad_distance": 54697,
+  "kept": 2742168,
+  "flex_rows": 69338,
+  "negative_kept": 28278
  },
  "yellow_2023-09": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-09.parquet",
@@ -689,11 +1006,12 @@
   "sha256": "091bf156bea5bb10bd217f5f12375f966f8789349af45d5ee4153e3e1e077a87",
   "last_modified": "Fri, 17 Nov 2023 14:55:56 GMT",
   "raw_rows": 2846722,
-  "out_of_month": 32,
-  "bad_amount": 29702,
-  "bad_distance": 95543,
-  "kept": 2721445,
-  "flex_rows": 78476
+  "reversal_twins": 26067,
+  "out_of_month": 31,
+  "bad_distance": 95782,
+  "kept": 2724842,
+  "flex_rows": 78921,
+  "negative_kept": 26532
  },
  "yellow_2023-10": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-10.parquet",
@@ -701,11 +1019,12 @@
   "sha256": "dc5f069476d350df802ed8120f3b39ec321c34cfa905381e87f608c78ca0c645",
   "last_modified": "Mon, 18 Dec 2023 14:32:59 GMT",
   "raw_rows": 3522285,
+  "reversal_twins": 32730,
   "out_of_month": 53,
-  "bad_amount": 37275,
-  "bad_distance": 117964,
-  "kept": 3366993,
-  "flex_rows": 77725
+  "bad_distance": 118298,
+  "kept": 3371204,
+  "flex_rows": 78035,
+  "negative_kept": 33352
  },
  "yellow_2023-11": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-11.parquet",
@@ -713,11 +1032,12 @@
   "sha256": "af203de0e73a92d640121f02a34326f25037d62380fc406237c87c2a4231ae58",
   "last_modified": "Thu, 18 Jan 2024 15:04:46 GMT",
   "raw_rows": 3339715,
+  "reversal_twins": 32405,
   "out_of_month": 31,
-  "bad_amount": 37030,
-  "bad_distance": 98850,
-  "kept": 3203804,
-  "flex_rows": 70434
+  "bad_distance": 99191,
+  "kept": 3208088,
+  "flex_rows": 70738,
+  "negative_kept": 33086
  },
  "yellow_2023-12": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2023-12.parquet",
@@ -725,11 +1045,12 @@
   "sha256": "ab4f4db11cb31484747f62eb507c13fcfaff290aaf59c13e6465dea0b1166b9c",
   "last_modified": "Thu, 22 Feb 2024 14:55:08 GMT",
   "raw_rows": 3376567,
+  "reversal_twins": 35173,
   "out_of_month": 43,
-  "bad_amount": 42767,
-  "bad_distance": 69500,
-  "kept": 3264257,
-  "flex_rows": 146268
+  "bad_distance": 69821,
+  "kept": 3271530,
+  "flex_rows": 149212,
+  "negative_kept": 38766
  },
  "yellow_2024-01": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet",
@@ -737,11 +1058,12 @@
   "sha256": "c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510",
   "last_modified": "Thu, 21 Mar 2024 15:35:44 GMT",
   "raw_rows": 2964624,
-  "out_of_month": 18,
-  "bad_amount": 37567,
-  "bad_distance": 56948,
-  "kept": 2870091,
-  "flex_rows": 115293
+  "reversal_twins": 31109,
+  "out_of_month": 17,
+  "bad_distance": 57286,
+  "kept": 2876212,
+  "flex_rows": 117336,
+  "negative_kept": 33992
  },
  "yellow_2024-02": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet",
@@ -749,11 +1071,12 @@
   "sha256": "c76c43c18c6c6664080dd920baab4928988d5786a6b65980792ca7cd796f9f20",
   "last_modified": "Fri, 19 Apr 2024 18:22:42 GMT",
   "raw_rows": 3007526,
+  "reversal_twins": 31632,
   "out_of_month": 15,
-  "bad_amount": 40733,
-  "bad_distance": 64945,
-  "kept": 2901833,
-  "flex_rows": 148928
+  "bad_distance": 65323,
+  "kept": 2910556,
+  "flex_rows": 153546,
+  "negative_kept": 37322
  },
  "yellow_2024-03": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet",
@@ -761,11 +1084,12 @@
   "sha256": "2d4cdc8fb96726cdd3803b13b02d2e61e71d45720aff0ebc693a8bdd1f249823",
   "last_modified": "Wed, 22 May 2024 19:27:43 GMT",
   "raw_rows": 3582628,
+  "reversal_twins": 38904,
   "out_of_month": 23,
-  "bad_amount": 58606,
-  "bad_distance": 83251,
-  "kept": 3440748,
-  "flex_rows": 365505
+  "bad_distance": 83700,
+  "kept": 3460001,
+  "flex_rows": 379697,
+  "negative_kept": 54491
  },
  "yellow_2024-04": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet",
@@ -773,11 +1097,12 @@
   "sha256": "ce37f736c7cf9e92164c850ef2b502a8f7bb590fc1804b6edbcb80293da01b89",
   "last_modified": "Thu, 20 Jun 2024 20:30:14 GMT",
   "raw_rows": 3514289,
+  "reversal_twins": 38388,
   "out_of_month": 9,
-  "bad_amount": 57733,
-  "bad_distance": 41630,
-  "kept": 3414917,
-  "flex_rows": 388779
+  "bad_distance": 42079,
+  "kept": 3433813,
+  "flex_rows": 402651,
+  "negative_kept": 53347
  },
  "yellow_2024-05": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet",
@@ -785,11 +1110,12 @@
   "sha256": "1974230be2b5a3ea92e47b5eb77f32dbf1de896d81ad8df4ab6faba52749ad23",
   "last_modified": "Thu, 18 Jul 2024 18:35:19 GMT",
   "raw_rows": 3723833,
+  "reversal_twins": 43208,
   "out_of_month": 33,
-  "bad_amount": 60138,
-  "bad_distance": 45303,
-  "kept": 3618359,
-  "flex_rows": 387338
+  "bad_distance": 45788,
+  "kept": 3634804,
+  "flex_rows": 398391,
+  "negative_kept": 55391
  },
  "yellow_2024-06": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-06.parquet",
@@ -797,11 +1123,12 @@
   "sha256": "677cf14c8347f745b583f012fbdba072334c6c4efa17bfd6a64369f2ba30329c",
   "last_modified": "Tue, 20 Aug 2024 14:01:55 GMT",
   "raw_rows": 3539193,
-  "out_of_month": 51,
-  "bad_amount": 61914,
-  "bad_distance": 48420,
-  "kept": 3428808,
-  "flex_rows": 387571
+  "reversal_twins": 42872,
+  "out_of_month": 50,
+  "bad_distance": 49095,
+  "kept": 3447176,
+  "flex_rows": 400603,
+  "negative_kept": 57106
  },
  "yellow_2024-07": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet",
@@ -809,11 +1136,12 @@
   "sha256": "af12d6b04daeb78550799ae99933d495b27d715b6dbb0fad9bb750a4537d3070",
   "last_modified": "Wed, 18 Sep 2024 13:53:34 GMT",
   "raw_rows": 3076903,
+  "reversal_twins": 44023,
   "out_of_month": 47,
-  "bad_amount": 58843,
-  "bad_distance": 43661,
-  "kept": 2974352,
-  "flex_rows": 263092
+  "bad_distance": 44313,
+  "kept": 2988520,
+  "flex_rows": 271458,
+  "negative_kept": 54222
  },
  "yellow_2024-08": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet",
@@ -821,11 +1149,12 @@
   "sha256": "7315643dd16bafc03e27d9903edbfd35404c2550a695d0da0a3e73852d940cfb",
   "last_modified": "Wed, 23 Oct 2024 18:45:26 GMT",
   "raw_rows": 2979183,
+  "reversal_twins": 46375,
   "out_of_month": 51,
-  "bad_amount": 58450,
-  "bad_distance": 52930,
-  "kept": 2867752,
-  "flex_rows": 238623
+  "bad_distance": 53679,
+  "kept": 2879078,
+  "flex_rows": 243884,
+  "negative_kept": 53706
  },
  "yellow_2024-09": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-09.parquet",
@@ -833,11 +1162,12 @@
   "sha256": "2f42e4a383a6635de803001462848d0aee2b47f6ce899126805d2d05361fb843",
   "last_modified": "Wed, 20 Nov 2024 21:37:39 GMT",
   "raw_rows": 3633030,
-  "out_of_month": 49,
-  "bad_amount": 73421,
-  "bad_distance": 75042,
-  "kept": 3484518,
-  "flex_rows": 430863
+  "reversal_twins": 58197,
+  "out_of_month": 48,
+  "bad_distance": 76120,
+  "kept": 3498665,
+  "flex_rows": 438918,
+  "negative_kept": 66979
  },
  "yellow_2024-10": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-10.parquet",
@@ -845,11 +1175,12 @@
   "sha256": "d19fe05aa0b259af24eb47051735293287f1e6dc263ba04030ec1ab4c6ec2650",
   "last_modified": "Wed, 18 Dec 2024 21:21:21 GMT",
   "raw_rows": 3833771,
+  "reversal_twins": 61123,
   "out_of_month": 40,
-  "bad_amount": 75685,
-  "bad_distance": 75596,
-  "kept": 3682450,
-  "flex_rows": 345528
+  "bad_distance": 76667,
+  "kept": 3695941,
+  "flex_rows": 352282,
+  "negative_kept": 69316
  },
  "yellow_2024-11": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-11.parquet",
@@ -857,11 +1188,12 @@
   "sha256": "5ef321876de5007a7c147a347389133fc94fd7ac28f82eb1d57d8f2cf05cfd3b",
   "last_modified": "Fri, 17 Jan 2025 20:03:41 GMT",
   "raw_rows": 3646369,
+  "reversal_twins": 53244,
   "out_of_month": 50,
-  "bad_amount": 71771,
-  "bad_distance": 62964,
-  "kept": 3511584,
-  "flex_rows": 336299
+  "bad_distance": 64233,
+  "kept": 3528842,
+  "flex_rows": 346819,
+  "negative_kept": 66106
  },
  "yellow_2024-12": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-12.parquet",
@@ -869,11 +1201,12 @@
   "sha256": "41ebf7db80bebde60c58e5143c14cdf38ad04a0f3e3ff44215b3e240d55f6c78",
   "last_modified": "Fri, 21 Feb 2025 21:29:11 GMT",
   "raw_rows": 3668371,
+  "reversal_twins": 61599,
   "out_of_month": 34,
-  "bad_amount": 79020,
-  "bad_distance": 69376,
-  "kept": 3519941,
-  "flex_rows": 289619
+  "bad_distance": 70632,
+  "kept": 3536106,
+  "flex_rows": 298494,
+  "negative_kept": 72359
  },
  "yellow_2025-01": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-01.parquet",
@@ -881,11 +1214,12 @@
   "sha256": "9af277e4c0d3f9deb30644da822981e1e7df6af58313170fd3aa8a474485488a",
   "last_modified": "Wed, 23 Apr 2025 16:31:58 GMT",
   "raw_rows": 3475226,
+  "reversal_twins": 52539,
   "out_of_month": 22,
-  "bad_amount": 144439,
-  "bad_distance": 76325,
-  "kept": 3254440,
-  "flex_rows": 413422
+  "bad_distance": 86741,
+  "kept": 3335924,
+  "flex_rows": 488162,
+  "negative_kept": 129519
  },
  "yellow_2025-02": {
   "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-02.parquet",
@@ -893,10 +1227,258 @@
   "sha256": "037cba555a73663f3a51a2c27816e40e3feb364769942bdf122b9da31e377bd3",
   "last_modified": "Wed, 23 Apr 2025 16:16:58 GMT",
   "raw_rows": 3577543,
+  "reversal_twins": 48990,
   "out_of_month": 31,
-  "bad_amount": 183043,
-  "bad_distance": 83097,
-  "kept": 3311372,
-  "flex_rows": 628576
+  "bad_distance": 96197,
+  "kept": 3432325,
+  "flex_rows": 743701,
+  "negative_kept": 166019
+ },
+ "yellow_2025-03": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-03.parquet",
+  "bytes": 69964745,
+  "sha256": "20c4b77cce457b7cfdae77c5069ca7dc91c167f876a41467f4502ab69487a186",
+  "last_modified": "Wed, 21 May 2025 15:29:16 GMT",
+  "raw_rows": 4145257,
+  "reversal_twins": 61163,
+  "out_of_month": 33,
+  "bad_distance": 99226,
+  "kept": 3984835,
+  "flex_rows": 854839,
+  "negative_kept": 191791
+ },
+ "yellow_2025-04": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-04.parquet",
+  "bytes": 67352824,
+  "sha256": "6f98938de9380a3f85600533816f0dc0e6d9b5b210e485d623952bac599bbe28",
+  "last_modified": "Wed, 25 Jun 2025 14:52:12 GMT",
+  "raw_rows": 3970553,
+  "reversal_twins": 64814,
+  "out_of_month": 7,
+  "bad_distance": 86932,
+  "kept": 3818800,
+  "flex_rows": 696611,
+  "negative_kept": 172008
+ },
+ "yellow_2025-05": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-05.parquet",
+  "bytes": 77837865,
+  "sha256": "7ef46bcd0fceee7f8c0bb38a532be05bceefabb512d4bb0b32a7727dd862b15c",
+  "last_modified": "Wed, 25 Jun 2025 15:52:37 GMT",
+  "raw_rows": 4591845,
+  "reversal_twins": 69852,
+  "out_of_month": 24,
+  "bad_distance": 136119,
+  "kept": 4385850,
+  "flex_rows": 1099501,
+  "negative_kept": 293958
+ },
+ "yellow_2025-06": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-06.parquet",
+  "bytes": 73542954,
+  "sha256": "1bea7f5b09c744414451fa7fef09fbc5a393ffb1621c859be6ba0df23a14e1b6",
+  "last_modified": "Fri, 25 Jul 2025 14:02:45 GMT",
+  "raw_rows": 4322960,
+  "reversal_twins": 66338,
+  "out_of_month": 20,
+  "bad_distance": 130117,
+  "kept": 4126485,
+  "flex_rows": 1119283,
+  "negative_kept": 250554
+ },
+ "yellow_2025-07": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-07.parquet",
+  "bytes": 66943728,
+  "sha256": "1efa6a0458dc60341f7f81dcbb5015af731f42d1a109f4e0d594dd46970fd4ef",
+  "last_modified": "Thu, 21 Aug 2025 16:23:37 GMT",
+  "raw_rows": 3898963,
+  "reversal_twins": 68673,
+  "out_of_month": 7,
+  "bad_distance": 119225,
+  "kept": 3711058,
+  "flex_rows": 954735,
+  "negative_kept": 224654
+ },
+ "yellow_2025-08": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-08.parquet",
+  "bytes": 62293743,
+  "sha256": "b982ace703e3564d92e94edae5ec93515f4f1fb07a5b95e7404c32464c1a6a89",
+  "last_modified": "Wed, 24 Sep 2025 14:18:54 GMT",
+  "raw_rows": 3574091,
+  "reversal_twins": 69593,
+  "out_of_month": 17,
+  "bad_distance": 100630,
+  "kept": 3403851,
+  "flex_rows": 821409,
+  "negative_kept": 240674
+ },
+ "yellow_2025-09": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-09.parquet",
+  "bytes": 72432945,
+  "sha256": "cd39b9901f01d1fd752d45cbaec91ee5f68c4dddf9e261e938c1dbab404644c7",
+  "last_modified": "Thu, 23 Oct 2025 15:54:14 GMT",
+  "raw_rows": 4251015,
+  "reversal_twins": 70721,
+  "out_of_month": 7,
+  "bad_distance": 119492,
+  "kept": 4060795,
+  "flex_rows": 986032,
+  "negative_kept": 230811
+ },
+ "yellow_2025-10": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-10.parquet",
+  "bytes": 75267589,
+  "sha256": "e1f63caf331bc6230d9c6f757cb88e55fdc2bddde185fb414d2c947abdc773c3",
+  "last_modified": "Tue, 25 Nov 2025 15:27:50 GMT",
+  "raw_rows": 4428699,
+  "reversal_twins": 61498,
+  "out_of_month": 13,
+  "bad_distance": 121145,
+  "kept": 4246043,
+  "flex_rows": 911097,
+  "negative_kept": 290857
+ },
+ "yellow_2025-11": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-11.parquet",
+  "bytes": 71134255,
+  "sha256": "2cf2f3127f96d4d5dea30f8afe05119cf8e4ba57bd9e60b789d3f296fc8459ab",
+  "last_modified": "Fri, 19 Dec 2025 15:51:29 GMT",
+  "raw_rows": 4181444,
+  "reversal_twins": 43623,
+  "out_of_month": 24,
+  "bad_distance": 106143,
+  "kept": 4031654,
+  "flex_rows": 945706,
+  "negative_kept": 365656
+ },
+ "yellow_2025-12": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-12.parquet",
+  "bytes": 73701327,
+  "sha256": "eaba7ff61ebb6453fc6f673fda43d621380307f869b768b124992e8486c785e1",
+  "last_modified": "Wed, 25 Mar 2026 15:55:54 GMT",
+  "raw_rows": 4305006,
+  "reversal_twins": 43973,
+  "out_of_month": 9,
+  "bad_distance": 149264,
+  "kept": 4111760,
+  "flex_rows": 1085873,
+  "negative_kept": 44591
+ },
+ "yellow_2026-01": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-01.parquet",
+  "bytes": 64165080,
+  "sha256": "8b3933fe6f0d7b6d8826613c0dd724edc680ff7c49e2bd4c7635c05102728637",
+  "last_modified": "Wed, 25 Mar 2026 15:46:09 GMT",
+  "raw_rows": 3724889,
+  "reversal_twins": 35722,
+  "out_of_month": 6,
+  "bad_distance": 123094,
+  "kept": 3566067,
+  "flex_rows": 995338,
+  "negative_kept": 36595
+ },
+ "yellow_2026-02": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-02.parquet",
+  "bytes": 58683353,
+  "sha256": "5352ca800f29c40a221ed5b0c6392c451fde7fcd236a73651bd5aea74713a26c",
+  "last_modified": "Wed, 25 Mar 2026 15:46:31 GMT",
+  "raw_rows": 3399866,
+  "reversal_twins": 24396,
+  "out_of_month": 16,
+  "bad_distance": 121257,
+  "kept": 3254197,
+  "flex_rows": 929240,
+  "negative_kept": 24595
+ },
+ "yellow_2026-03": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-03.parquet",
+  "bytes": 67891249,
+  "sha256": "d7af794a7ac06cbbb5afb4d1df9e86d84f2e878584de708ff2ffca4bd7d234d9",
+  "last_modified": "Tue, 28 Apr 2026 18:56:26 GMT",
+  "raw_rows": 3952451,
+  "reversal_twins": 18960,
+  "out_of_month": 19,
+  "bad_distance": 119376,
+  "kept": 3814096,
+  "flex_rows": 860370,
+  "negative_kept": 18826
+ },
+ "yellow_2026-04": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-04.parquet",
+  "bytes": 64818115,
+  "sha256": "e03b82d5722a6b21d4fbce011afd8837495202c0b5db77ff0d8d15dd80834ba8",
+  "last_modified": "Fri, 05 Jun 2026 20:44:34 GMT",
+  "raw_rows": 3831240,
+  "reversal_twins": 13271,
+  "out_of_month": 12,
+  "bad_distance": 91994,
+  "kept": 3725963,
+  "flex_rows": 740755,
+  "negative_kept": 12807
+ },
+ "yellow_2026-05": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-05.parquet",
+  "bytes": 69699174,
+  "sha256": "9aa5a1609e2bf07d9051b7d530de05b1019e12a560ecb2c59c137c8b3a8b6750",
+  "last_modified": "Fri, 26 Jun 2026 21:07:20 GMT",
+  "raw_rows": 4090836,
+  "reversal_twins": 29397,
+  "out_of_month": 14,
+  "bad_distance": 111282,
+  "kept": 3950143,
+  "flex_rows": 863450,
+  "negative_kept": 12601
+ },
+ "yellow_2026-06": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-06.parquet",
+  "bytes": 65465637,
+  "sha256": "f340c62a18885c56176433c9db28e97d0a8a14e6e49869276ad8afb20ebf088b",
+  "last_modified": "Thu, 17 Sep 2026 18:34:43 GMT",
+  "raw_rows": 3837248,
+  "reversal_twins": 12782,
+  "out_of_month": 15,
+  "bad_distance": 126487,
+  "kept": 3697964,
+  "flex_rows": 922968,
+  "negative_kept": 12037
+ },
+ "yellow_2026-07": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-07.parquet",
+  "bytes": 61685033,
+  "sha256": "3260bb629c2f334055f8a566cbb02c15476b15120c45d7ad0aae46fc4bb06612",
+  "last_modified": "Thu, 17 Sep 2026 21:03:03 GMT",
+  "raw_rows": 3530109,
+  "reversal_twins": 71489,
+  "out_of_month": 46,
+  "bad_distance": 125498,
+  "kept": 3333076,
+  "flex_rows": 821261,
+  "negative_kept": 12621
+ },
+ "yellow_2026-08": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-08.parquet",
+  "bytes": 59043961,
+  "sha256": "6683a025443afcbb28ac4f238fcbb6334767dc69fab4a16b1eb16a78dcd013cd",
+  "last_modified": "Thu, 01 Oct 2026 13:38:15 GMT",
+  "raw_rows": 3336716,
+  "reversal_twins": 99708,
+  "out_of_month": 15,
+  "bad_distance": 115422,
+  "kept": 3121571,
+  "flex_rows": 754696,
+  "negative_kept": 12525
+ },
+ "yellow_2026-09": {
+  "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-09.parquet",
+  "bytes": 67374896,
+  "sha256": "32d8d883e3fb9c0d681f4d47b205afe0fcb2a4830739673b4dd3bafbac9b0086",
+  "last_modified": "Thu, 29 Oct 2026 13:56:04 GMT",
+  "raw_rows": 3876044,
+  "reversal_twins": 125094,
+  "out_of_month": 22,
+  "bad_distance": 143403,
+  "kept": 3607525,
+  "flex_rows": 970280,
+  "negative_kept": 12655
  }
 }
